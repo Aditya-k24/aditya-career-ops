@@ -23,7 +23,7 @@
 \ProvidesClass{mcdowellcv}[2022/03/18 v1.2.0 McDowell CV class]
 
 % Set up the fonts according to options
-\def\mainfontsize{11pt}
+\def\mainfontsize{10.5pt}
 \def\mainfontface{Times New Roman}
 
 \DeclareOption{calibri}{%
@@ -50,7 +50,7 @@
 \LoadClass[\papersize,\mainfontsize]{article}
 
 % Set document margins
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage[left=0.4in,top=0.4in,right=0.4in,bottom=0.4in]{geometry}
 
 % Set font face
 \usepackage{fontspec}
@@ -98,45 +98,45 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 %--------------------------------------------------------------------------------
 
 \ifthenelse{\equal{\platformname}{\notwindowsname}}{
-  \def\namespaceskip{0.575em}
-  \def\afterheaderspace{1.1pt}
-  \def\beforesectionheaderspace{5pt}
+  \def\namespaceskip{0.5em}
+  \def\afterheaderspace{2.1pt}
+  \def\beforesectionheaderspace{1pt}
   \def\sectionheadermargin{6pt}
   \def\beforesectionheaderhrulespace{2.85pt}
   \def\sectionheaderhrlueheight{0.518pt}
-  \def\aftersectionheaderspace{-5.8pt}
+  \def\aftersectionheaderspace{-2.85pt}
   
   \ifpapersize
-    \def\aftersinglelinesubsectionheaderspace{-5.75pt}
+    \def\aftersinglelinesubsectionheaderspace{-2pt}
   \else
-    \def\aftersinglelinesubsectionheaderspace{-20.25pt}
+    \def\aftersinglelinesubsectionheaderspace{-16.5pt}
   \fi
   
   \def\afterdoublelinesubsectionheaderspace{-11.75pt}
   \def\aftermultilinesubsectionheaderspace{-7.75pt}
   \def\afteremptysubsectionheaderspace{1.25pt}
   \def\subsectionmargin{9pt}
-  \def\aftersubsectionspace{2.1pt}
+  \def\aftersubsectionspace{0pt}
 }{
   \def\namespaceskip{0.4em}
   \def\afterheaderspace{3pt}
-  \def\beforesectionheaderspace{4.75pt}
+  \def\beforesectionheaderspace{1pt}
   \def\sectionheadermargin{6pt}
   \def\beforesectionheaderhrulespace{3pt}
   \def\sectionheaderhrlueheight{0.5pt}
   \def\aftersectionheaderspace{-4pt}
   
   \ifpapersize
-    \def\aftersinglelinesubsectionheaderspace{-4pt}
+    \def\aftersinglelinesubsectionheaderspace{-2pt}
   \else
-    \def\aftersinglelinesubsectionheaderspace{-18.5pt}
+    \def\aftersinglelinesubsectionheaderspace{-1.5pt}
   \fi
 
   \def\afterdoublelinesubsectionheaderspace{-10pt}
   \def\aftermultilinesubsectionheaderspace{-6pt}
   \def\afteremptysubsectionheaderspace{3pt}
   \def\subsectionmargin{9pt}
-  \def\aftersubsectionspace{4pt}
+  \def\aftersubsectionspace{0pt}
 }
 
 %--------------------------------------------------------------------------------
@@ -182,11 +182,22 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 
 \makeatother
 
+% Location (centered below header)
+\makeatletter
+\newcommand\location[1]{\def\@location{#1}}
+\location{}
+
+\newcommand\printlocation{
+  \ifdefempty{\@location}{}{\small\@location}
+}
+
+\makeatother
+
 \makeatletter
 \newcommand\makeheader{
   \begin{center}
     \begin{tabu} to 1\textwidth { X[l,m] X[2,c,m] X[r,m] }
-      \printaddress & \printname & \printcontacts \\
+      \printaddress & \printname\ifdefempty{\@location}{}{\linebreak\small\@location} & \printcontacts \\
     \end{tabu}
   \end{center}
   \vspace*{\afterheaderspace}
