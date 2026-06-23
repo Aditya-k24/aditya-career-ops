@@ -1,0 +1,71 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=0.75in, top=0.6in, bottom=0.6in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{fontspec}
+
+\setmainfont{Times New Roman}
+
+\definecolor{HightouchPurple}{HTML}{7C3AED}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=HightouchPurple,
+  linkcolor=HightouchPurple
+}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Aditya Kulkarni}} \\[4pt]
+  \small
+  \faPhone\ (281)-876-7066 \quad
+  \faEnvelope\ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \quad
+  \faGlobe\ \href{https://www.kulkarniaditya.com}{kulkarniaditya.com} \quad
+  \faLinkedin\ \href{https://www.linkedin.com/in/adityakulkarni244/}{linkedin.com/in/adityakulkarni244} \quad
+  \faGithub\ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+\end{center}
+
+\vspace{6pt}
+
+June 16, 2026
+
+\vspace{6pt}
+
+Hiring Team \\
+Hightouch \\
+Remote
+
+\vspace{10pt}
+
+Dear Hightouch Team,
+
+\vspace{6pt}
+
+Hightouch is building what every data team actually needs: agents that can take a question about user behavior or campaign performance and answer it directly from the data, without a five-step analytics workflow. I've spent the past year building exactly this kind of system — production LLM pipelines and agentic orchestration that sit between raw data and the people who need answers. I'm applying for the Software Engineer, AI Agents role.
+
+\vspace{8pt}
+
+Here's the direct overlap:
+
+\begin{itemize}[leftmargin=1.2em, itemsep=4pt]
+  \item[\textcolor{HightouchPurple}{\faAngleRight}] \textbf{Production agentic systems, shipped to enterprise clients.} At Isomer AI, I built and deployed Temporal.io agentic workflows with MCP tooling into live enterprise environments — multi-step orchestration across Claude, GPT-4o, and Gemini, handling auth, tool-calling, and state management under SLA. AlgoPulse extends this: a TypeScript event-driven agentic platform using Temporal.io and Kafka, scaled to 2,000 concurrent requests with zero state loss. I build agents that run in production, not just demos.
+  \item[\textcolor{HightouchPurple}{\faAngleRight}] \textbf{Semantic retrieval and data pipelines.} VectorLift is a semantic search system combining BM25, a fine-tuned bi-encoder with in-batch negatives, and a cross-encoder re-ranker, evaluated across 6 pipeline configurations with NDCG@10 and MRR@10. The indexing pipeline uses Kafka for event-based corpus ingestion into Elasticsearch and Qdrant, served via FastAPI. This is the retrieval and data processing layer that Hightouch's data agents need under the hood.
+  \item[\textcolor{HightouchPurple}{\faAngleRight}] \textbf{Rapid prototyping into production.} I've won or placed Top 10 in 6+ national hackathons, shipping full-stack MVPs in 48-hour sprints. At Isomer, I took AI features from prototype to enterprise-grade production across 923 commits and 7 deployments. The ability to move fast from POC to production is how I work by default.
+  \item[\textcolor{HightouchPurple}{\faAngleRight}] \textbf{Backend architecture and full-stack ownership.} I owned the complete backend stack at Isomer — PostgreSQL, Redis, Auth0, Docker, Terraform, CI/CD — under on-call SLA for enterprise clients. I can architect and own the systems behind an AI agent, not just the prompt layer.
+\end{itemize}
+
+\vspace{8pt}
+
+I'd welcome the chance to talk through the agent building systems interview and show how my experience applies to Hightouch's roadmap.
+
+\vspace{10pt}
+
+Sincerely, \\[4pt]
+\textbf{Aditya Kulkarni}
+
+\end{document}

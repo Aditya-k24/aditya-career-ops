@@ -1,0 +1,118 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+
+\documentclass[]{mcdowellcv}
+
+\usepackage{amsmath}
+\usepackage{hyperref}
+\geometry{top=0.15in, bottom=0.15in}
+
+\name{Aditya Kulkarni}
+\address{\hspace{0.2\textwidth}\href{https://www.kulkarniaditya.com}{kulkarniaditya.com} \linebreak \href{https://www.linkedin.com/in/adityakulkarni244/}{linkedin.com/in/adityakulkarni244}}
+\contacts{(281)-876-7066 \linebreak adityakulkarnius@gmail.com \linebreak \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}}
+
+\begin{document}
+
+\makeheader
+
+\begin{cvsection}{Employment}
+  \begin{cvsubsection}{Graduate Research Assistant}{NC State University}{Apr 2025 -- Present}
+    \begin{itemize}
+      \item Collaborated with plant biologists and geneticists to deploy cloud-native genomic data platform on GCP (Cloud Run) with JBrowse 2 genome browser, enabling 100+ researchers to visualize 500GB+ genome datasets.
+      \item Improved ML model accuracy by 12\% via hyperparameter tuning and time-series feature analysis on biological sensor data.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Product Engineer Intern}{Isomer AI}{May 2025 -- May 2026}
+    \begin{itemize}
+      \item Shipped per-tenant AI workflow platform for insurance carriers: Temporal.io durable orchestration, LLM risk signal detection across Claude/GPT-4o/Gemini, Auth0 RBAC, MCP servers; 30+ deployments.
+      \item Built MCP servers (Python + TypeScript); Playwright + Tailscale VPN for secure customer-internal browser automation.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Software Developer Intern}{Mphasis (HP Company)}{Jun 2024 -- Aug 2024}
+    \begin{itemize}
+      \item Partnered with healthcare data teams to build 5+ AI workflows including health claim automation using OCR, NLP, and ML pipelines; improved document processing accuracy by 25\% across 10K+ daily medical claims.
+      \item Automated AWS and GCP CI/CD pipelines; integrated Grafana monitoring and led model validation and red-teaming sessions.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{AI/ML Intern}{Capgemini}{Jun 2023 -- Aug 2023}
+    \begin{itemize}
+      \item Led cross-functional SDLC for data-driven enterprise ticket analysis using NLP classification models; worked with support teams to reduce resolution time by 15\% and eliminate 2,000+ monthly manual triages.
+      \item Built Kafka + Spark + Hadoop pipelines with data engineers; cut ticket-processing latency by 20\% at peak daily load.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Education}
+  \begin{cvsubsection}{Raleigh, NC}{North Carolina State University}{Aug 2024 -- May 2026}
+    \begin{itemize}
+      \item Master of Science in Computer Science
+      \item Courses: Artificial Intelligence, Operating Systems, Algorithms, Data Science, Object Oriented Development, Software Engineering, Programming Languages, Computer Networks, Distributed Systems.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Mumbai, India}{Mumbai University}{Aug 2020 -- May 2024}
+    \begin{itemize}
+      \item Bachelor of Technology in Computer Science; CGPA: 9.32/10. Courses: Data Warehousing, Big Data Infrastructure, DS \& Algorithms, Machine Learning, Blockchain, Computer Networks, Database Systems.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Projects}
+  \begin{cvsubsection}{VectorLift}{Semantic Search \& RAG Evaluation Engine}{2026}
+    \begin{itemize}
+      \item Built production-grade semantic search on MS MARCO: BM25 baseline, fine-tuned bi-encoder retrieval, cross-encoder re-ranker; 6 pipeline configurations benchmarked with NDCG@10, MRR@10, MAP, and bootstrap tests.
+      \item Kafka-driven pipeline into Elasticsearch + Qdrant vector store; FastAPI search API; Streamlit experiment comparison dashboard.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{LLM Eval Harness}{Vendor-Neutral LLM Benchmark}{2025}
+    \begin{itemize}
+      \item Built vendor-neutral LLM evaluation harness in Python comparing Claude, GPT-4o, and Gemini across 2,000 frozen labeled examples spanning factual recall, reasoning, and code generation tasks.
+      \item Tracked hallucination rate, p50/p95 latency, and cost-per-call; applied McNemar significance tests across 6 metrics.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{KubeServe}{Kubernetes LLM Inference Platform}{2025}
+    \begin{itemize}
+      \item Built Kubernetes-native LLM inference platform: FastAPI router, KEDA autoscaler (scale-to-zero to N replicas), Kopf CRD operator for multi-provider LLM serving; circuit breaker + EWMA load balancing.
+      \item Deployed via Helm + ArgoCD GitOps on Kubernetes; OTel + Prometheus + Grafana observability stack; 88 pytest tests.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Languages and Technologies}
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item \textbf{Languages:} Python, TypeScript, JavaScript, Java, SQL
+      \item \textbf{AI/ML:} LLMs (Claude, GPT-4o, Gemini), RAG, embeddings, LLMOps, ETL, PyTorch, scikit-learn, Temporal.io, MCP
+      \item \textbf{Frameworks:} FastAPI, Node.js, NestJS, Next.js, React, Spring Boot, Express
+      \item \textbf{Cloud \& Infra:} AWS, GCP, PostgreSQL, Redis, Kafka, Elasticsearch, Qdrant, Docker, Kubernetes, OTel, GitHub Actions
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Additional Experience and Awards}
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item \textbf{Open Source:} Contributed to Expertiza Rails platform (5,000+ users, 300+ contributors); added 110+ RSpec tests, increased coverage by 25\%, reduced redundancy by 35\%.
+      \item \textbf{Hackathon Winner:} Won or ranked Top 10 in 6+ national hackathons; shipped 3 full-stack MVPs end-to-end within 48-hour competitive sprints.
+      \item \textbf{Publications:} Co-authored CV-Based Cybersecurity Threat Detection (Springer 2023) and Mapify (IEEE 2022); presented to 500+ global attendees.
+      \item \textbf{GDSC Lead:} Led Google Developer Student Club; organized 4+ tech events (hackathons, conferences) reaching 500+ students.
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\end{document}

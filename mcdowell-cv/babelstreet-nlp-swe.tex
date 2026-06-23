@@ -1,0 +1,123 @@
+% Babel Street (via hatch IT) — NLP/Linguistics Software Engineer
+% Aditya Kulkarni | 2026-06-23 | mcdowellcv class | Compile: xelatex
+\documentclass{mcdowellcv}
+
+% Tighten spacing (override cls defaults)
+\def\beforesectionheaderspace{3pt}
+\def\aftersubsectionspace{0.5pt}
+\def\afterheaderspace{0pt}
+\def\aftersinglelinesubsectionheaderspace{-22pt}
+\def\afterdoublelinesubsectionheaderspace{-13pt}
+\def\afteremptysubsectionheaderspace{0.5pt}
+\geometry{left=0.6in,top=0.45in,right=0.6in,bottom=0.45in}
+
+\name{Aditya Kulkarni}
+\address{(281) 876-7066 \linebreak adityakulkarnius@gmail.com \linebreak linkedin.com/in/adityakulkarni244}
+\contacts{kulkarniaditya.com \linebreak github.com/Aditya-k24}
+
+\begin{document}
+\fontsize{10}{12}\selectfont
+\makeheader
+
+%------------------------------------------------------------
+\begin{cvsection}{Employment}
+
+  \begin{cvsubsection}{NC State University}{Graduate Research Assistant}{Apr 2025 -- Present}
+    \begin{itemize}
+      \item Collaborated with plant biologists and geneticists to deploy cloud-native genomic data platform on GCP (Cloud Run) with JBrowse 2 genome browser, enabling 100+ researchers to visualize 500GB+ genome datasets
+      \item Improved ML model accuracy by 12\% via hyperparameter tuning and time-series analysis on biological sensor data
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Isomer AI}{Product Engineer Intern}{May 2025 -- May 2026}
+    \begin{itemize}
+      \item Shipped per-tenant AI workflow platform for insurance carriers: Temporal.io durable orchestration, LLM risk signal detection across Claude/GPT-4o/Gemini, typed document classification, Auth0 RBAC; 30+ deployments
+      \item Built MCP servers (Python + TypeScript); Playwright + Tailscale VPN for customer-internal browser automation
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Mphasis (HP Company)}{Software Developer Intern}{Jun 2024 -- Aug 2024}
+    \begin{itemize}
+      \item Partnered with healthcare data teams to build 5+ AI workflows including health claim automation using OCR, NLP, and ML pipelines; improved document processing accuracy by 25\% across 10K+ daily medical claims
+      \item Automated AWS and GCP CI/CD pipelines; integrated Grafana monitoring and led model validation and red-teaming sessions
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Capgemini}{AI/ML Intern}{Jun 2023 -- Aug 2023}
+    \begin{itemize}
+      \item Led cross-functional SDLC for data-driven enterprise ticket analysis using NLP classification models; worked with support teams to reduce resolution time by 15\% and eliminate 2,000+ monthly manual triages
+      \item Built Kafka + Spark + Hadoop pipelines with data engineers; cut ticket-processing latency by 20\% at peak load
+    \end{itemize}
+  \end{cvsubsection}
+
+\end{cvsection}
+
+%------------------------------------------------------------
+\begin{cvsection}{Education}
+
+  \begin{cvsubsection}{Raleigh, NC}{North Carolina State University}{Aug 2024 -- May 2026}
+    \begin{itemize}
+      \item Master of Science in Computer Science; GPA: 3.5/4.0. Courses: Artificial Intelligence, Machine Learning, Algorithms, Operating Systems, Data Science, Software Engineering, Distributed Systems
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Mumbai, India}{Mumbai University}{Aug 2020 -- May 2024}
+    \begin{itemize}
+      \item Bachelor of Technology in Computer Science; CGPA: 9.32/10. Courses: Data Structures \& Algorithms, Big Data Infrastructure, Data Warehousing, Machine Learning, Database Systems
+    \end{itemize}
+  \end{cvsubsection}
+
+\end{cvsection}
+
+%------------------------------------------------------------
+\begin{cvsection}{Projects}
+
+  \begin{cvsubsection}{VectorLift}{Semantic Search \& Ranking Engine}{2026}
+    \begin{itemize}
+      \item Built production search system on MS MARCO: BM25 baseline in Elasticsearch, fine-tuned dense bi-encoder, and cross-encoder re-ranker; Kafka indexing into Elasticsearch + Qdrant; served via FastAPI; evaluated 6 pipeline configs with NDCG@10/MRR@10/MAP and paired bootstrap significance so every ranking change stays defensible
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{InventoryReservationService}{Transactional Java API}{2026}
+    \begin{itemize}
+      \item Engineered Java 21 + Spring Boot reservation API preventing overselling via PostgreSQL row-level locking (SELECT FOR UPDATE); idempotent endpoints, RFC 9457 errors, Flyway migrations, Spring Security RBAC; proved concurrency correctness with Testcontainers; Dockerized GitHub Actions CI
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{LLM Eval Harness}{Provenance-Focused NLP Benchmark}{2025}
+    \begin{itemize}
+      \item Built vendor-neutral benchmark comparing Claude, GPT-4o, and Gemini across grounded QA, multi-hop QA, and claim verification on a 2,000-example frozen set; tracked TokenF1, evidence-quote validity, and grounded hallucination rate; McNemar + Holm correction + bootstrap CIs
+    \end{itemize}
+  \end{cvsubsection}
+
+\end{cvsection}
+
+%------------------------------------------------------------
+\begin{cvsection}{Languages and Technologies}
+
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item \textbf{Languages:} Java, Python, TypeScript, JavaScript, SQL, Bash
+      \item \textbf{Search \& NLP:} Elasticsearch, BM25, dense/cross-encoder re-ranking, sentence-transformers, PyTorch, Qdrant, RAG, NDCG/MRR evaluation
+      \item \textbf{Backend \& Infra:} Spring Boot, FastAPI, Node.js, Kubernetes, Docker, Kafka, Redis, PostgreSQL, AWS, GCP
+      \item \textbf{Tooling \& Observability:} Testcontainers, GitHub Actions, OpenTelemetry, Prometheus, Grafana
+    \end{itemize}
+  \end{cvsubsection}
+
+\end{cvsection}
+
+%------------------------------------------------------------
+\begin{cvsection}{Additional Experience and Awards}
+
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item \textbf{IEEE Published:} Co-authored and presented research on Computer Vision-Based Cybersecurity Threat Detection at the Springer icSoftComp 2023 international conference, reaching an audience of 500+ global attendees
+      \item \textbf{Hackathon Winner:} Won or ranked Top 10 in 6+ national hackathons; built 3 full-stack MVPs end-to-end in 48-hour competitive sprints
+      \item \textbf{GDSC Lead:} Led 4+ tech events as Google Developer Student Club Lead, reaching 500+ students across hackathons and conferences
+      \item \textbf{Technical Writing:} Published articles on LLM model collapse, AI agent security, and audio AI at kulkarniaditya.com/blog
+    \end{itemize}
+  \end{cvsubsection}
+
+\end{cvsection}
+
+\end{document}

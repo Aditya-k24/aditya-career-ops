@@ -1,0 +1,68 @@
+\documentclass[11pt,letterpaper]{article}
+
+% --- Packages ---
+\usepackage[top=0.75in, bottom=0.75in, left=0.85in, right=0.85in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+% --- Colors ---
+\definecolor{AmazonOrange}{HTML}{FF9900}
+\definecolor{DarkGrey}{HTML}{333333}
+
+\setstretch{1.1}
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\Huge \textbf{\color{AmazonOrange} Aditya Kulkarni}}\\[8pt]
+    {\color{DarkGrey} \small
+    \faMapMarker* \ Raleigh, NC \quad \textbar \quad
+    \faPhone \ (281) 876-7066 \quad \textbar \quad
+    \faEnvelope \ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \\[4pt]
+    \faLinkedin \ \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244} \quad \textbar \quad
+    \faGithub \ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+    }
+\end{center}
+
+\vspace{-4pt}
+{\color{AmazonOrange}\rule{\linewidth}{1.5pt}}
+\vspace{10pt}
+
+% --- Date & Salutation ---
+\today\\[10pt]
+\textbf{To the Amazon Robotics Engineering Team,}
+
+\vspace{6pt}
+
+% --- Opening ---
+Amazon Robotics is building the intelligent infrastructure that moves millions of packages to customers every day---at a scale where software correctness, system reliability, and AI-powered automation directly translate into real-world outcomes. The Software Development Engineer role sits at that intersection: cloud-native distributed systems, GenAI tooling, and software that interacts with physical fulfillment technology. I am an engineer who has spent the last year shipping production AI systems at scale, and I am excited to bring that to Amazon Robotics.
+
+\vspace{4pt}
+
+\begin{itemize}[leftmargin=*, itemsep=6pt, label={\color{AmazonOrange}\faAngleRight}]
+    \item \textbf{Distributed Systems at Scale:} At \textbf{Isomer AI}, I owned the production backend---PostgreSQL, Redis, Docker, Terraform---managing CI/CD, resolving on-call incidents, and maintaining SLA across enterprise environments. I also built \textbf{CortexQ}, a Kubernetes-native LLM inference platform with KEDA autoscaling, multi-provider model serving, and full OpenTelemetry observability, load tested to 500 concurrent users.
+
+    \item \textbf{GenAI \& AI-Powered Development:} I deployed 10+ production AI features using multi-model pipelines spanning Claude, GPT-4o, and Gemini via MCP tooling and Temporal.io agentic workflows---923 commits, 7 deployments. I built an \textbf{LLM Eval Harness} tracking hallucination rate, latency, and cost across 2,000 labeled examples with Bootstrap CIs and McNemar significance tests. Leveraging GenAI for development productivity is already how I work.
+
+    \item \textbf{Cloud-Native Architecture on AWS:} Production experience across AWS and GCP: automated CI/CD deployments, Grafana monitoring, Kafka real-time streaming pipelines, and Helm/ArgoCD GitOps. AWS is my primary cloud environment.
+
+    \item \textbf{Research-Grade Software Engineering:} As a \textbf{Graduate Research Assistant at NC State}, I built cloud infrastructure serving 500GB+ of genomic data to 100+ researchers and improved ML model accuracy by 12\% via feature engineering on biological sensor data---instilling a standard of correctness and operational reliability that maps directly to fulfillment-center software.
+\end{itemize}
+
+\vspace{6pt}
+
+% --- Closing ---
+Amazon Robotics operates at a scale where software quality has physical consequences. That standard of engineering is what I want to be held to. I would be glad to discuss how my experience in production AI systems and cloud-native infrastructure translates to your team's roadmap.
+
+\vspace{12pt}
+
+\textbf{Sincerely,}\\[8pt]
+Aditya Kulkarni
+
+\end{document}

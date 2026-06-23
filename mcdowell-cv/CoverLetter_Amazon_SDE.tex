@@ -1,0 +1,61 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[margin=0.7in, top=0.6in, bottom=0.6in]{geometry}
+\usepackage{fontawesome5}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{parskip}
+
+\definecolor{AmazonOrange}{HTML}{FF9900}
+\setmainfont{Times New Roman}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=AmazonOrange,
+  linkcolor=AmazonOrange
+}
+
+\begin{document}
+\thispagestyle{empty}
+
+{\large \textbf{Aditya Kulkarni}} \hfill
+{\color{AmazonOrange} \faPhone\ (281)-876-7066} \quad
+{\color{AmazonOrange} \faEnvelope\ adityakulkarnius@gmail.com} \\
+{\color{AmazonOrange} \faGithub\ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}} \quad
+{\color{AmazonOrange} \faGlobe\ \href{https://www.kulkarniaditya.com}{kulkarniaditya.com}}
+
+\vspace{6pt}
+{\color{AmazonOrange}\hrule height 1.2pt}
+\vspace{12pt}
+
+{\color{AmazonOrange} \textbf{Software Development Engineer 2026}} \hfill June 20, 2026
+
+\vspace{10pt}
+
+Amazon engineers build systems that run at a scale most engineers never see. That is exactly the environment I have been preparing for --- distributed, high-throughput, correctness-critical infrastructure where ownership means shipping and maintaining, not just committing.
+
+\vspace{6pt}
+
+\textbf{Why I am a strong fit:}
+
+\begin{itemize}
+  \item[\faAngleRight] \textbf{Java and distributed systems depth.} \textit{InventoryReservationService}: Java 21 + Spring Boot REST API with PostgreSQL row-level locking (SELECT FOR UPDATE), idempotent endpoints, RFC 9457 error handling, and Testcontainers concurrency tests that verify exactly one success and one 409 Conflict under race conditions. \textit{KubeServe}: Kubernetes-native LLM inference platform with FastAPI, KEDA autoscaler, Kopf CRD operator, circuit breaker, and EWMA load balancing --- deployed via ArgoCD, load tested to 500 VUs.
+
+  \item[\faAngleRight] \textbf{Proven scale: 2,000 req/sec on AWS.} AlgoPulse: real-time competitive coding platform with Temporal.io durable workflows, Judge0 sandboxed execution, Kafka event streaming, Redis pub/sub leaderboard --- load tested to 10,000 concurrent users with sub-100ms latency on AWS auto-scaling infrastructure.
+
+  \item[\faAngleRight] \textbf{Production GenAI engineering.} At Isomer AI I shipped features across a per-tenant insurance AI platform powering 30+ production deployments --- Temporal.io orchestration, multi-model LLM pipelines (Claude, GPT-4o, Gemini), MCP server tooling, and Playwright browser automation. Mphasis: 5+ AI workflows improving accuracy by 25\% across 10K+ daily medical claims. Amazon's bet on GenAI is where my production experience compounds.
+
+  \item[\faAngleRight] \textbf{Ownership across the full SDLC.} Capgemini: reduced ticket resolution time 15\% by owning end-to-end pipeline (Kafka + Spark + Hadoop). Expertiza open source: 110+ RSpec tests, 25\% coverage increase, 300+ contributor codebase. I do not hand off --- I debug, iterate, and ship.
+\end{itemize}
+
+\vspace{8pt}
+
+I want to build systems that millions of people depend on. Amazon is the right place to do that.
+
+\vspace{12pt}
+
+{\color{AmazonOrange} \textbf{Aditya Kulkarni}} \\
+\href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \quad $|$ \quad (281)-876-7066
+
+\end{document}

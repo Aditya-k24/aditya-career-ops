@@ -1,0 +1,50 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[top=0.55in, bottom=0.55in, left=0.85in, right=0.85in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{setspace}
+\definecolor{GleanBlue}{HTML}{1B5E8A}
+\definecolor{DarkGrey}{HTML}{333333}
+\setstretch{1.0}
+\begin{document}
+\begin{center}
+    {\Huge \textbf{\color{GleanBlue} Aditya Kulkarni}}\\[8pt]
+    {\color{DarkGrey} \small
+    \faPhone \ (281) 876-7066 \quad \textbar \quad
+    \faEnvelope \ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \\[4pt]
+    \faLinkedin \ \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244} \quad \textbar \quad
+    \faGithub \ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+    }
+\end{center}
+\vspace{-4pt}
+{\color{GleanBlue}\rule{\linewidth}{1.5pt}}
+\vspace{10pt}
+
+June 21, 2026\\[10pt]
+\textbf{To the Glean Engineering Team,}
+
+\vspace{6pt}
+
+Most LLM evaluation pipelines measure the wrong things. They benchmark on leaderboards, not on what offline metrics actually predict about real user experience. I built an evaluation system specifically designed around that question --- 2,000 frozen labeled examples, six carefully chosen metrics, and McNemar significance tests to distinguish real improvement from measurement noise. That rigor is exactly what Glean's LLM Evals team needs to improve the quality of an AI assistant that enterprise employees trust for real work.
+
+\vspace{4pt}
+\begin{itemize}[leftmargin=*, itemsep=3pt, label={\color{GleanBlue}\faAngleRight}]
+    \item \textbf{LLM Evaluation Harness, Built End-to-End:} I built a vendor-neutral evaluation system in Python comparing Claude, GPT-4o, and Gemini across 2,000 frozen labeled examples spanning factual recall, multi-step reasoning, and code generation. I tracked hallucination rate, p50/p95 latency, and cost-per-call, then applied McNemar significance tests across 6 metrics to distinguish meaningful regressions from noise. This maps directly to the role's core deliverable: ``evaluation benchmarks and metrics that actually predict real user experience.''
+
+    \item \textbf{Multi-Provider LLM Platform with Observability:} \textbf{KubeServe} is a production LLM inference platform I built: FastAPI router, KEDA autoscaler, multi-provider routing (Claude/GPT-4o/Gemini), circuit breaker, EWMA load balancing, and OTel + Prometheus + Grafana observability. Measuring latency and reliability across providers in production --- not just in dev --- is where I built intuition for what the numbers mean.
+
+    \item \textbf{Distributed Data Pipelines at Scale:} At \textbf{Isomer AI}, I built production AI pipelines on Temporal.io and Kafka processing insurance carrier workflows across 30+ customer deployments. At \textbf{Capgemini}, I built Kafka + Spark + Hadoop pipelines cutting ticket-processing latency 20\% at peak load. The role calls out comfort with ``distributed data pipelines'' --- I have built them in production at multiple companies.
+
+    \item \textbf{Production LLM Integration and Prompt Engineering:} At Isomer, I shipped multi-model LLM risk signal detection across Claude, GPT-4o, and Gemini with context engineering, MCP tool calling, and structured output validation in production. Understanding where models fail in practice --- not just on benchmarks --- is what makes evaluation systems useful.
+\end{itemize}
+\vspace{6pt}
+
+Glean's LLM Evals team is building the measurement layer that makes every improvement to the AI assistant verifiable and trusted. I want to contribute to that rigor. I would be glad to discuss.
+
+\vspace{12pt}
+\textbf{Sincerely,}\\[8pt]
+Aditya Kulkarni
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[margin=0.7in, top=0.6in, bottom=0.6in]{geometry}
+\usepackage{fontawesome5}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{parskip}
+
+\definecolor{OracleRed}{HTML}{C74634}
+\setmainfont{Times New Roman}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=OracleRed,
+  linkcolor=OracleRed
+}
+
+\begin{document}
+\thispagestyle{empty}
+
+{\large \textbf{Aditya Kulkarni}} \hfill
+{\color{OracleRed} \faPhone\ (281)-876-7066} \quad
+{\color{OracleRed} \faEnvelope\ adityakulkarnius@gmail.com} \\
+{\color{OracleRed} \faGithub\ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}} \quad
+{\color{OracleRed} \faGlobe\ \href{https://www.kulkarniaditya.com}{kulkarniaditya.com}}
+
+\vspace{6pt}
+{\color{OracleRed}\hrule height 1.2pt}
+\vspace{12pt}
+
+{\color{OracleRed} \textbf{Software Developer --- OCI Load Balancer Team, Oracle}} \hfill June 20, 2026
+
+\vspace{10pt}
+
+OCI's Load Balancer team is a distributed systems problem at global cloud scale. High-availability, correctness under concurrency, and automation are the engineering problems I find most interesting --- and where my work is most directly applicable.
+
+\vspace{6pt}
+
+\textbf{Why I am a strong fit:}
+
+\begin{itemize}
+  \item[\faAngleRight] \textbf{Distributed systems at load-tested scale.} AlgoPulse: Temporal.io workflows, Kafka event streaming, Redis pub/sub live leaderboard, deployed on AWS with auto-scaling groups, k6 load tested to 10,000 concurrent users with sub-100ms leaderboard latency guaranteed at 2,000 req/sec. KubeServe: KEDA autoscaler (scale-to-zero to N replicas), circuit breaker with EWMA load balancing, k6 tested to 500 VUs. These are not toy systems --- they are designed to hold up under real load.
+
+  \item[\faAngleRight] \textbf{Java correctness under concurrency.} InventoryReservationService: Java 21 + Spring Boot REST API with PostgreSQL SELECT FOR UPDATE row-level locking across multi-SKU reservations, idempotent POST endpoints with Flyway schema migrations, and Testcontainers concurrency tests that prove a qty-1 race produces exactly one success and one 409 Conflict. Clean, verifiable Java with correctness guarantees.
+
+  \item[\faAngleRight] \textbf{Operational engineering and automation.} At Isomer AI I owned 30+ per-tenant production deployments end-to-end --- each deployed via ArgoCD GitOps, monitored with Grafana, and debugged across the full stack when issues arose. At Mphasis I built AWS and GCP CI/CD pipelines across teams. Reducing operational burden through tooling and automation is how I approach production systems.
+
+  \item[\faAngleRight] \textbf{Generalist who debugs across the stack.} At NC State I debug across genomic data pipelines, cloud infrastructure, and ML model pipelines simultaneously. At Capgemini I worked across Kafka, Spark, Hadoop, and NLP layers. The JD asks for engineers who can dive deep into any part of the stack --- that is how I have always worked.
+\end{itemize}
+
+\vspace{8pt}
+
+OCI's Load Balancer is infrastructure that the rest of the cloud depends on. I want to work on systems where correctness and scale are non-negotiable.
+
+\vspace{12pt}
+
+{\color{OracleRed} \textbf{Aditya Kulkarni}} \\
+\href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \quad $|$ \quad (281)-876-7066
+
+\end{document}

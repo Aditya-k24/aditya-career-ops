@@ -1,0 +1,68 @@
+\documentclass[11pt,letterpaper]{article}
+
+% --- Packages ---
+\usepackage[top=0.75in, bottom=0.75in, left=0.85in, right=0.85in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+% --- Colors & Typography ---
+\definecolor{IBSTeal}{HTML}{0B6477}
+\definecolor{DarkGrey}{HTML}{333333}
+
+\setstretch{1.1}
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\Huge \textbf{\color{IBSTeal} Aditya Kulkarni}}\\[8pt]
+    {\color{DarkGrey} \small
+    \faMapMarker* \ Raleigh, NC \quad \textbar \quad
+    \faPhone \ (281) 876-7066 \quad \textbar \quad
+    \faEnvelope \ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \\[4pt]
+    \faLinkedin \ \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244} \quad \textbar \quad
+    \faGithub \ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+    }
+\end{center}
+
+\vspace{-4pt}
+{\color{IBSTeal}\rule{\linewidth}{1.5pt}}
+\vspace{10pt}
+
+% --- Date & Salutation ---
+\today\\[10pt]
+\textbf{To the Integrated Biosciences Engineering Team,}
+
+\vspace{6pt}
+
+% --- Opening ---
+Drug discovery has always been constrained by the pace at which scientists can design, run, and interpret experiments. Integrated Biosciences is attacking that constraint directly---building AI-native infrastructure that puts intelligent automation in the hands of researchers. I am an engineer who has spent the last year shipping production agentic AI systems, and I have built on biological research data. That combination is not common.
+
+\vspace{4pt}
+
+\begin{itemize}[leftmargin=*, itemsep=6pt, label={\color{IBSTeal}\faAngleRight}]
+    \item \textbf{MCP Tooling \& Agentic Orchestration:} At \textbf{Isomer AI}, I deployed 10+ production AI features built on the Model Context Protocol (MCP) and Temporal.io agentic workflows---multi-model pipelines spanning Claude, GPT-4o, and Gemini across 923 commits and 7 production deployments. I use Claude Code daily as my primary development environment; I did not need to learn it for this role.
+
+    \item \textbf{Biological Research Data at Scale:} As a \textbf{Graduate Research Assistant at NC State}, I built a cloud-native platform on GCP serving 500GB+ of genomic datasets to 100+ researchers, and improved ML model accuracy by 12\% through hyperparameter tuning and feature engineering on biological sensor data. Most software engineers have never touched biological research data---I built infrastructure specifically to serve scientists who work with it.
+
+    \item \textbf{Full-Stack TypeScript / React / PostgreSQL:} My production stack at Isomer AI is TypeScript, Node.js, PostgreSQL, Redis, and Docker---the exact combination this role requires. I own schema design, query optimization, CI/CD, and incident response across enterprise client environments.
+
+    \item \textbf{Production AI Infrastructure:} I built \textbf{CortexQ}, a Kubernetes-native LLM inference platform on GCP with KEDA autoscaling, multi-provider model serving, and full OpenTelemetry observability---load tested to 500 concurrent users and validated with 88 integration tests. Building reliable AI infrastructure at scale is work I do because I find it genuinely interesting.
+\end{itemize}
+
+\vspace{6pt}
+
+% --- Closing ---
+Integrated Biosciences is compressing the timeline between a biological insight and a medicine that reaches patients. I want to build the software that makes that faster. I would be glad to discuss how my experience maps to your team's roadmap.
+
+\vspace{12pt}
+
+\textbf{Sincerely,}\\[8pt]
+Aditya Kulkarni
+
+\end{document}

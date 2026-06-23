@@ -1,0 +1,71 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+\definecolor{brand}{HTML}{003087}
+\hypersetup{colorlinks=true, urlcolor=brand}
+
+\newcommand{\CLheader}{%
+  \begin{center}
+    {\Large \textbf{Aditya Kulkarni}}\\[4pt]
+    \textcolor{brand}{\faPhone}\ (281)-876-7066 \quad
+    \textcolor{brand}{\faEnvelope}\ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \quad
+    \textcolor{brand}{\faLinkedin}\ \href{https://linkedin.com/in/adityakulkarni244}{adityakulkarni244} \quad
+    \textcolor{brand}{\faGlobe}\ \href{https://kulkarniaditya.com}{kulkarniaditya.com}
+  \end{center}
+  \vspace{4pt}
+  \textcolor{brand}{\rule{\linewidth}{1.2pt}}
+  \vspace{6pt}
+}
+
+\begin{document}
+\CLheader
+
+\today
+
+\vspace{8pt}
+
+PlayStation Trust \& Safety Engineering\\
+Sony Interactive Entertainment\\
+San Diego, CA
+
+\vspace{8pt}
+
+Dear PlayStation Engineering Team,
+
+\vspace{6pt}
+
+I am applying for the Software Engineer I position on the Trust \& Safety Platform team. Building the infrastructure that protects players at scale is a problem I find genuinely compelling, and my background in full-stack platform development and cloud-native systems maps directly to what this role requires.
+
+\vspace{6pt}
+
+A few areas of direct relevance:
+
+\vspace{4pt}
+\begin{itemize}
+  \item[\textcolor{brand}{\faAngleRight}] At Isomer AI, I built and shipped a multi-tenant AI workflow platform in TypeScript and Node.js serving 30+ enterprise customers in production, integrating Auth0 RBAC, MCP servers, and multi-model LLM pipelines across Claude, GPT-4o, and Gemini.
+  \item[\textcolor{brand}{\faAngleRight}] KubeServe is a Kubernetes-native inference platform I built end-to-end: Helm + ArgoCD GitOps deployment, KEDA autoscaling, circuit breaker with EWMA load balancing, and a full OTel + Prometheus + Grafana observability stack.
+  \item[\textcolor{brand}{\faAngleRight}] PulseRank demonstrates my full-stack range: event-driven TypeScript backend (NestJS + Next.js + React) with MySQL, MongoDB, and Redis, benchmarked at 10K concurrent users with Testcontainers integration tests.
+\end{itemize}
+
+\vspace{6pt}
+
+The Trust \& Safety platform work described here, moderation systems, telemetry, AI-assisted workflows, and operational tooling, sits at exactly the intersection I enjoy: backend systems that have to be reliable and scalable, with meaningful product impact. I am a fast learner, comfortable with ambiguity, and experienced shipping across the full stack and into production infrastructure.
+
+\vspace{6pt}
+
+I would welcome the chance to contribute to PlayStation's safety platform and grow within the team.
+
+\vspace{12pt}
+
+Sincerely,
+
+\vspace{6pt}
+\textbf{Aditya Kulkarni}
+
+\end{document}

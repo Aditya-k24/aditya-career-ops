@@ -1,0 +1,148 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+\usepackage{hyperref}
+% Reduce top margin
+\geometry{top=0.3in}
+
+% Set applicant's personal data for header
+\name{Aditya Kulkarni}
+\address{\hspace{0.2\textwidth}\href{https://www.kulkarniaditya.com}{kulkarniaditya.com}  \linebreak \href{https://www.linkedin.com/in/adityakulkarni244/}{linkedin.com/in/adityakulkarni244/}}
+\location{Raleigh, NC}
+\contacts{(281)-876-7066 \linebreak adityakulkarnius@gmail.com \linebreak \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}}
+
+\begin{document}
+
+\makeheader
+
+
+\begin{cvsection}{Employment}
+  \begin{cvsubsection}{Graduate Research Assistant}{NC State University}{April 2025 -- Present}
+    \begin{itemize}
+      \item Designed a cloud-based genomic data platform with JBrowse 2, enabling interactive exploration of strawberry and grape datasets of size 500GB for over 100 researchers worldwide, deployed on Google Cloud Run.      
+      \item Collaborated on ML architecture design, applying hyperparameter tuning and time-series analysis, improving model accuracy by 12\%.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Product Engineer Intern}{Isomer AI}{May 2025 -- May 2026}
+    \begin{itemize}
+      \item Owned full backend of a production AI platform - Temporal.io durable workflow orchestration, real-time event pipelines, and complete data layer (TypeScript, Node.js, Express, Prisma ORM, PostgreSQL, Redis, Auth0, Docker, Sentry); shipped 10+ features from DB schema to async worker to API.
+      \item Engineered multi-model LLM pipelines across Claude, GPT-4o, and Gemini via MCP with provider-agnostic interfaces - any model swappable without downstream changes; built document processing (PDF gen, email parsing, S3), Playwright test coverage, and reviewed PRs across the engineering team. 
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}   
+
+  \begin{cvsubsection}{Software Developer Intern}{Mphasis (HP Company)}{Jun 2024 -- Aug 2024}
+    \begin{itemize}
+      \item Built 5+ AI-driven workflows including a health claim automation tool using OCR, NLP, and ML; improved claim accuracy by 25\%. 
+      \item Automated deployments on AWS \& GCP, integrated monitoring dashboards with Grafana, and supported model validation/red-teaming to enhance reliability.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}  
+  
+  \begin{cvsubsection}{AI/ML Intern}{Capgemini}{Jun 2023 -- Aug 2023}
+    \begin{itemize}
+      \item Led end-to-end SDLC for a data-driven system automating support ticket analysis, reducing processing time by 15\%.
+      \item Implemented distributed data pipelines using Hadoop + Spark for batch processing, and integrated Kafka streaming for real-time data ingestion, reducing ticket-processing latency by 20\%.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+\end{cvsection}
+
+\begin{cvsection}{Education}
+  \begin{cvsubsection}{Raleigh, NC}{North Carolina State University}{Aug 2024 -- May 2026}
+    \begin{itemize}
+      \item Master of Science in Computer Science
+      \item Courses: Artificial Intelligence, Operating Systems, Data Science, Object Oriented Development, Software Engineering, Algorithms.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Mumbai, India}{Mumbai University}{August 2020 -- May 2024}
+    \begin{itemize}
+      \item Bachelor of Technology in Computer Science; CGPA: 9.32/10
+      \item Courses: Data Warehousing, Big Data Infra, DS \& Algorithm, OS, Machine learning, Software Engineering, Blockchain.
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Projects}
+  \begin{cvsubsection}{\href{https://github.com/adityapai18/HackNC24}{PerCent – GenAI Finance App}}{HackNC24 Finalist}{Nov 2024 -- Dec 2024}
+    \begin{itemize}
+      \item Developed a GenAI finance app with goal tracking, expense logging, and an AI chatbot; ranked Top 10 of 100+ teams.
+      \item Designed a RAG-based chatbot with Selenium, Hugging Face, and Qwen-14B-Chat, reducing manual financial research by 30\%.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{\href{https://github.com/Aditya-k24/mapify}{Mapify – ML \& NLP Tool}}{IEEE Published}{Feb 2022 -- Nov 2022}
+    \begin{itemize}
+      \item Built T5-transformer model pipeline that converted 1,500+ PDFs/images into mind maps/flowcharts.
+      \item Reduced academic review time by 60\%, used NLTK and NetworkX for structure extraction, and presented to 500+ attendees at IEEE.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{\href{https://github.com/heet214/Sanjeevani-health}{Sanjeevani – Health App}}{Full Stack + ML}{Jan 2023 -- Aug 2023}
+    \begin{itemize}
+      \item Developed an ML-powered app achieving 87\% accuracy using real-time sensor data and classification models.
+      \item Shortlisted Top 1\% (12 of 1100+) for innovation in UI and predictive health insights and building a full-stack app with React.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{\href{https://github.com/ncsu-csc-501/project3-mndedhia_akulka26_aapai}{Demand Paging – Xinu OS}}{Systems Programming}{Oct 2024 -- Dec 2024}
+    \begin{itemize}
+      \item Engineered 8-store virtual memory system in C for Xinu OS with Second-Chance replacement; reduced page faults by 25\%.
+      \item Added 7+ kernel system calls, increasing memory performance by 15\% using inverted page tables and a new fault handler.
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Languages and Technologies}
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item \textbf{Languages:} Python, TypeScript, Java, JavaScript, R, SQL, NoSQL, C, Ruby
+      \item \textbf{AI/ML:} OpenAI API, LangChain, MCP, Hugging Face, TensorFlow, PyTorch, RAG, Pandas, NumPy
+      \item \textbf{Cloud \& DevOps:} AWS, GCP, Docker, Kubernetes, CI/CD pipelines, Terraform, Grafana, Distributed Systems, Beam
+      \item \textbf{Frameworks/Tools:} Node.js, React, MERN Stack, Temporal, Kafka, Spark, Hadoop, Tailwind, Angular, Git, Notion, Overleaf
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Additional Experience and Awards}
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item \textbf{Lead at Google Developers Student Club:} Led 4+ tech events (hackathons, conferences) reaching 500+ students.
+      \item \textbf{Winner of National Hackathons:} Won or ranked in Top 10 in 6+ national hackathons, developing 3 complete MVPs within 48-hour builds, showcasing rapid prototyping and collaboration.
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\end{document}

@@ -1,0 +1,68 @@
+\documentclass[11pt,letterpaper]{article}
+
+% --- Packages ---
+\usepackage[top=0.75in, bottom=0.75in, left=0.85in, right=0.85in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+% --- Colors ---
+\definecolor{SnapGreen}{HTML}{00A651}
+\definecolor{DarkGrey}{HTML}{333333}
+
+\setstretch{1.1}
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\Huge \textbf{\color{SnapGreen} Aditya Kulkarni}}\\[8pt]
+    {\color{DarkGrey} \small
+    \faMapMarker* \ Raleigh, NC \quad \textbar \quad
+    \faPhone \ (281) 876-7066 \quad \textbar \quad
+    \faEnvelope \ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \\[4pt]
+    \faLinkedin \ \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244} \quad \textbar \quad
+    \faGithub \ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+    }
+\end{center}
+
+\vspace{-4pt}
+{\color{SnapGreen}\rule{\linewidth}{1.5pt}}
+\vspace{10pt}
+
+% --- Date & Salutation ---
+\today\\[10pt]
+\textbf{To the Snap Finance Engineering Team,}
+
+\vspace{6pt}
+
+% --- Opening ---
+Snap Finance is using data and machine learning to extend access to financing for people that traditional credit systems ignore. Building software that directly affects whether someone can afford a car repair or a new appliance is not abstract---it has real consequences. The Full Stack Engineer role is an opportunity to build the frontend and backend systems that make that work. My background is in exactly that stack: React, TypeScript, Node.js, and relational databases in production.
+
+\vspace{4pt}
+
+\begin{itemize}[leftmargin=*, itemsep=6pt, label={\color{SnapGreen}\faAngleRight}]
+    \item \textbf{React and TypeScript in Production:} At \textbf{Isomer AI}, I built and shipped 10+ production frontend and backend features in TypeScript across 923 commits and 7 deployments---Auth0 RBAC, real-time event pipelines, and multi-model AI integrations. The UI layer I own serves enterprise clients daily. Writing maintainable, reviewable TypeScript/React code is my default mode of work.
+
+    \item \textbf{Full-Stack with Relational Databases:} I built \textbf{PulseRank} in TypeScript using NestJS for the backend and Next.js for the frontend, with MySQL for transactional writes, Redis sorted sets for sub-millisecond leaderboard reads, and Testcontainers integration suites isolating database state per test. The combination of relational database design, RESTful API development, and end-to-end testing maps directly to what this role requires.
+
+    \item \textbf{AWS, CI/CD, and Operational Reliability:} At \textbf{Mphasis}, I automated AWS and GCP deployments via CI/CD pipelines and built Grafana monitoring dashboards for real-time production visibility. At Isomer AI, I manage on-call incident response and maintain SLA commitments. I understand that writing the feature is only half the job---keeping it running is the other half.
+
+    \item \textbf{Testing Discipline:} I treat tests as a first-class deliverable. PulseRank shipped with Testcontainers integration suites, k6 load benchmarks, and OpenTelemetry instrumentation. CortexQ, my Kubernetes inference platform, was validated with 88 pytest tests before deployment. Clean code means testable code.
+\end{itemize}
+
+\vspace{6pt}
+
+% --- Closing ---
+Snap Finance is building something that matters to the people it serves. I want to build the software that makes it work. I would be glad to discuss how my experience translates to your team's roadmap.
+
+\vspace{12pt}
+
+\textbf{Sincerely,}\\[8pt]
+Aditya Kulkarni
+
+\end{document}

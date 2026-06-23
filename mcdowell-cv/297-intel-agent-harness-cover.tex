@@ -1,0 +1,70 @@
+% Intel Corporation — Software Engineer, Agent Harness — Cover Letter
+% Aditya Kulkarni | 2026-06-21
+\documentclass[11pt]{article}
+\usepackage[left=0.75in,top=0.75in,right=0.75in,bottom=0.75in]{geometry}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\pagestyle{empty}
+
+% Intel blue accent
+\definecolor{accent}{HTML}{0071C5}
+
+\hypersetup{colorlinks=true, urlcolor=accent}
+
+\begin{document}
+
+%--- Header ---
+{\large\textbf{Aditya Kulkarni}} \hfill
+{\small
+  \textcolor{accent}{\faPhone}\ (281) 876-7066 \quad
+  \textcolor{accent}{\faEnvelope}\ adityakulkarnius@gmail.com \quad
+  \textcolor{accent}{\faLinkedin}\ \href{https://linkedin.com/in/aditya-kulkarni-355b81217}{linkedin.com/in/aditya-kulkarni-355b81217}
+}
+
+{\small
+  \textcolor{accent}{\faGithub}\ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24} \quad
+  \textcolor{accent}{\faGlobe}\ \href{https://kulkarniaditya.com}{kulkarniaditya.com}
+}
+
+\vspace{4pt}
+\textcolor{accent}{\rule{\linewidth}{0.5pt}}
+\vspace{8pt}
+
+\today
+
+\vspace{8pt}
+Hiring Team, Intel Corporation\\
+Software Engineer -- Agent Harness (JR0284869)\\
+Santa Clara, CA
+
+\vspace{10pt}
+Dear Hiring Team,
+
+\vspace{8pt}
+I'm applying for the Software Engineer -- Agent Harness role. I've spent the last year building the exact stack Intel is describing: MCP servers for tool schemas and context injection, Temporal.io for durable agent orchestration, and a Kubernetes-native inference platform that routes across multiple model backends.
+
+\vspace{8pt}
+\textbf{What I bring to this role:}
+
+\begin{itemize}[leftmargin=*, label={\textcolor{accent}{\faAngleRight}}, itemsep=4pt]
+  \item \textbf{Agent harness engineering, end-to-end.} At Isomer AI, I built MCP servers in both Python and TypeScript that power configurable multi-model LLM agent pipelines (Claude, GPT-4o, Gemini) with typed field extraction schemas, context injection, and Playwright browser automation -- deployed to 30+ enterprise customers. I also engineered the Temporal.io workflow engine driving these pipelines: 3-state versioning (Draft\,\textrightarrow\,Live\,\textrightarrow\,Archived), canary traffic splits, QA sampling, and CRITICAL/HIGH/STANDARD risk signal detection.
+
+  \item \textbf{LLM inference infrastructure.} CortexQ is a Kubernetes-native LLM inference platform I built independently: a FastAPI router with a 3-state circuit breaker and EWMA latency-aware load balancing across Claude, GPT-4o, and Gemini backends; a KEDA autoscaler that scales model pods from 0 to N on Redis queue depth; and a Python Kopf CRD operator (LLMDeployment) that reconciles Deployments, Services, and ScaledObjects. This maps directly to Intel's local+cloud hybrid intelligence architecture -- the same scale-to-zero and dynamic routing logic applies to edge inference.
+
+  \item \textbf{Model benchmarking and evaluation.} My LLM Eval Harness compares Claude Sonnet\,4.6, GPT-4o, and Gemini\,2.5 Pro on a 2,000-example frozen test set across grounded QA, multi-hop QA, and claim verification -- tracking ExactMatch, TokenF1, grounded hallucination rate, p50/p95 latency, and cost/call with paired bootstrap CIs and McNemar significance testing. This is the kind of rigorous, vendor-neutral evaluation Intel's agent harness needs.
+\end{itemize}
+
+\vspace{8pt}
+I'm graduating from NC State's MS CS program in May 2026 and am ready to relocate to Santa Clara immediately. I would welcome the chance to discuss how my background maps to Intel's agent harness work.
+
+\vspace{10pt}
+Sincerely,
+
+\vspace{4pt}
+\textbf{Aditya Kulkarni}
+
+\end{document}

@@ -1,0 +1,189 @@
+%-------------------------------------------------------------
+% Aditya Kulkarni — Full-Stack Software Engineer
+% Template: Jake's Resume (most recommended on r/EngineeringResumes)
+% Single-column, ATS-parseable, recruiter-friendly. Compile: pdflatex
+%-------------------------------------------------------------
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{charter} % clean serif, recruiter-friendly, ATS-safe
+\linespread{0.90}    % uniform line rhythm
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\topmargin}{-0.9in}
+\addtolength{\textheight}{2.15in}
+
+\urlstyle{same}
+\flushbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting — consistent space before rule and after
+\titleformat{\section}{
+  \vspace{3pt plus 6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{2pt plus 1pt}]
+
+% Ensure ATS-readable PDF
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands — single consistent vertical rhythm
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{1pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{1pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, topsep=2pt, itemsep=2pt, parsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in, topsep=1pt, itemsep=1pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+%-------------------------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Aditya Kulkarni} \\ \vspace{3pt}
+    \small (281) 876-7066 $|$
+    \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} $|$
+    \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244} $|$
+    \href{https://github.com/Aditya-k24}{github.com/Aditya-k24} $|$
+    \href{https://kulkarniaditya.com}{kulkarniaditya.com}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\small{Full-stack engineer (MS CS, NC State, May 2026) shipping features end-to-end, from \textbf{PostgreSQL} schema to \textbf{React.js} UI. Delivered \textbf{10+ production features} on a multi-tenant insurance platform and built the \textbf{LLM-agent} infrastructure behind them.}
+\vspace{-3pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {NC State University}{Apr 2025 -- Present}
+      {Graduate Research Assistant}{Raleigh, NC}
+      \resumeItemListStart
+        \resumeItem{Designed a cloud-based genomic platform (\textbf{JBrowse 2} on \textbf{Google Cloud Run}) enabling \textbf{100+ researchers} to interactively explore \textbf{500GB} of strawberry and grape datasets}
+        \resumeItem{Collaborated on \textbf{ML} architecture design, applying hyperparameter tuning and time-series analysis to improve model accuracy by \textbf{12\%}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Isomer AI}{May 2025 -- May 2026}
+      {Product Engineer Intern}{Remote}
+      \resumeItemListStart
+        \resumeItem{Shipped \textbf{10+ features} end-to-end on a per-tenant insurance SaaS; owned \textbf{Auth0} RBAC, \textbf{Redis} caching, and \textbf{PostgreSQL} data modeling across isolated customer stacks}
+        \resumeItem{Built \textbf{MCP servers} in \textbf{Python} and \textbf{TypeScript} orchestrating \textbf{3 LLM vendors} (Claude, GPT-4o, Gemini) behind typed extraction schemas, with \textbf{Playwright} browser automation}
+        \resumeItem{Engineered a \textbf{Temporal.io} workflow engine with versioned Draft/Live/Archived releases, canary splits, and risk detection; shipped via \textbf{Docker} + \textbf{GitHub Actions} CI/CD with \textbf{Sentry}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Mphasis (HP Company)}{Jun 2024 -- Aug 2024}
+      {Software Developer Intern}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{5+ AI workflows}, including a health-claim automation tool using OCR, NLP, and ML classification, that improved automated claim accuracy by \textbf{25\%}}
+        \resumeItem{Automated deployments on \textbf{AWS} and \textbf{GCP} with \textbf{Grafana} monitoring dashboards, and supported model validation and red-teaming to enhance production reliability}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Capgemini}{Jun 2023 -- Aug 2023}
+      {AI/ML Intern}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Led the SDLC for a support-ticket automation system, cutting manual processing time \textbf{15\%}; built \textbf{Hadoop}, \textbf{Spark}, and \textbf{Kafka} pipelines that reduced processing latency \textbf{20\%}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+        {\textbf{PulseRank} $|$ \emph{Real-Time Leaderboard \& Activity Feed}}{2026}
+        \resumeItemListStart
+          \resumeItem{Architected an event-driven leaderboard with \textbf{sub-millisecond} reads via \textbf{Redis} sorted sets, a \textbf{MySQL} outbox for durable writes, and live updates over Server-Sent Events}
+          \resumeItem{Built end-to-end in \textbf{TypeScript}, \textbf{NestJS}, and \textbf{Next.js}; verified multi-store consistency with \textbf{Testcontainers} and load-tested throughput with \textbf{k6}}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{InventoryReservationService} $|$ \emph{Transactional REST API}}{2026}
+        \resumeItemListStart
+          \resumeItem{Engineered a \textbf{Java 21} + \textbf{Spring Boot} inventory API preventing overselling under high concurrency via \textbf{PostgreSQL} row-level locking (SELECT FOR UPDATE) and idempotent endpoints}
+          \resumeItem{Hardened with \textbf{Flyway} migrations, \textbf{Spring Security} RBAC, RFC 9457 errors, Testcontainers concurrency tests, and a Dockerized \textbf{GitHub Actions} CI pipeline}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{AlgoPulse} $|$ \emph{Agentic AI Platform}}{2025}
+        \resumeItemListStart
+          \resumeItem{Diagnosed an API-polling bottleneck and re-architected to \textbf{Supabase Edge Functions} that stream LLM reasoning loops directly to the client at \textbf{2,000 async req/sec}}
+          \resumeItem{Integrated \textbf{Temporal.io} durable workflows and \textbf{Kafka} event streaming for fault-tolerant, replayable multi-step agent runs}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {NC State University}{Aug 2024 -- May 2026}
+      {M.S. Computer Science}{Raleigh, NC}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Software Engineering, Operating Systems, Algorithms, Object-Oriented Development, Machine Learning, Data Science}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Mumbai University}{Aug 2020 -- May 2024}
+      {B.Tech Computer Science, CGPA 9.32/10}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Data Structures \& Algorithms, Data Warehousing, Big Data Infrastructure, Blockchain, Software Engineering}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:} TypeScript, JavaScript, Python, Java, Ruby, SQL \\ \vspace{2pt}
+     \textbf{Frameworks:} React.js, Next.js, NestJS, Express.js, Node.js, Spring Boot, FastAPI \\ \vspace{2pt}
+     \textbf{Databases:} PostgreSQL, MySQL, MongoDB, Redis, Supabase, Elasticsearch \\ \vspace{2pt}
+     \textbf{DevOps \& Tools:} Docker, Kubernetes, AWS, GCP, GitHub Actions, Temporal.io, Kafka, Playwright, Testcontainers, Grafana, ArgoCD \\ \vspace{2pt}
+     \textbf{Achievements:} \textbf{HackNC24 Top 10}; \textbf{Sanjeevani Top 1\%} of 1100+ teams; \textbf{IEEE}-published; 110+ RSpec tests on \textbf{Expertiza} Rails OSS
+    }}
+ \end{itemize}
+
+%-------------------------------------------------------------
+\end{document}

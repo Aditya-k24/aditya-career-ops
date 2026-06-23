@@ -1,0 +1,114 @@
+% Intel Corporation — Software Engineer, Agent Harness
+% Aditya Kulkarni | 2026-06-21
+\documentclass{mcdowellcv}
+
+% Tighten spacing (override cls defaults)
+\def\beforesectionheaderspace{3pt}
+\def\aftersubsectionspace{0.5pt}
+\def\afterheaderspace{0pt}
+\def\aftersinglelinesubsectionheaderspace{-22pt}
+\def\afterdoublelinesubsectionheaderspace{-13pt}
+\def\afteremptysubsectionheaderspace{0.5pt}
+\geometry{left=0.6in,top=0.45in,right=0.6in,bottom=0.45in}
+
+\name{Aditya Kulkarni}
+\address{Santa Clara, CA \linebreak github.com/Aditya-k24 \linebreak kulkarniaditya.com}
+\contacts{(281) 876-7066 \linebreak adityakulkarnius@gmail.com \linebreak linkedin.com/in/aditya-kulkarni-355b81217}
+
+\begin{document}
+\fontsize{10}{12}\selectfont
+\makeheader
+
+%------------------------------------------------------------
+\begin{cvsection}{Employment}
+
+  \begin{cvsubsection}{Isomer AI}{Product Engineer Intern}{May 2025 -- May 2026}
+    \begin{itemize}
+      \item Built MCP servers in Python and TypeScript powering multi-model LLM agent pipelines (Claude, GPT-4o, Gemini) with typed field extraction schemas and context injection for 30+ enterprise deployments
+      \item Engineered Temporal.io agentic workflow engine: 3-state versioning (Draft\,{\small$\to$}\,Live\,{\small$\to$}\,Archived), canary traffic splits, QA sampling, and CRITICAL/HIGH/STANDARD risk signal detection
+      \item Shipped Playwright browser automation via Tailscale VPN for customer-internal navigation; document classification with typed schemas; email ingestion via Postmark, Microsoft Graph API, and Google Workspace
+      \item Owned per-tenant Fly.io + Supabase + Temporal Cloud infrastructure with Auth0 RBAC, Redis, Prisma ORM, and Sentry observability; delivered 10+ production features across agentic workflows and document processing
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{NC State University}{Graduate Research Assistant}{Apr 2025 -- Present}
+    \begin{itemize}
+      \item Designed JBrowse 2 genomic data platform on Google Cloud Run serving 500GB datasets to 100+ researchers; improved ML model accuracy by 12\% via hyperparameter tuning and time-series analysis
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Mphasis (HP Company)}{Software Developer Intern}{Jun 2024 -- Aug 2024}
+    \begin{itemize}
+      \item Built 5+ AI-driven workflows including health claim automation using OCR, NLP, and ML classification models, improving automated claim accuracy by 25\% across enterprise healthcare data pipelines
+      \item Automated CI/CD deployments on AWS and GCP with Grafana monitoring dashboards; supported model validation and red-teaming for production ML reliability
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Capgemini}{AI/ML Intern}{Jun 2023 -- Aug 2023}
+    \begin{itemize}
+      \item Led SDLC for support ticket automation, reducing processing time by 15\%; implemented Kafka streaming and Hadoop/Spark batch pipelines, cutting ticket-processing latency by 20\%
+    \end{itemize}
+  \end{cvsubsection}
+
+\end{cvsection}
+
+%------------------------------------------------------------
+\begin{cvsection}{Education}
+
+  \begin{cvsubsection}{NC State University}{MS Computer Science}{Aug 2024 -- May 2026}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Mumbai University}{BTech Computer Science, CGPA 9.32/10}{Aug 2020 -- May 2024}
+  \end{cvsubsection}
+
+\end{cvsection}
+
+%------------------------------------------------------------
+\begin{cvsection}{Projects}
+
+  \begin{cvsubsection}{CortexQ}{Kubernetes LLM Inference Platform}{2026}
+    \begin{itemize}
+      \item Built Kubernetes-native LLM inference platform: FastAPI router with 3-state circuit breaker and EWMA load balancing across Claude, GPT-4o, and Gemini; KEDA autoscaler scales pods 0--N on Redis queue depth; Python Kopf CRD operator; Helm + ArgoCD GitOps; 88 pytest tests; 500 VU k6 load tests
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{LLM Eval Harness}{Multi-Model LLM Benchmark}{2025}
+    \begin{itemize}
+      \item Built vendor-neutral benchmark comparing Claude Sonnet 4.6, GPT-4o, and Gemini 2.5 Pro on 2,000-example frozen test set; tracked ExactMatch, TokenF1, hallucination rate, p50/p95 latency, cost/call; bootstrap CIs + McNemar significance testing
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{AlgoPulse}{Agentic AI Platform}{2025}
+    \begin{itemize}
+      \item Architected event-driven AI orchestration platform; pivoted to Supabase Edge Functions streaming LLM reasoning loops to client, achieving 2,000 async inference req/sec; integrated Temporal.io durable workflows and Kafka
+    \end{itemize}
+  \end{cvsubsection}
+
+\end{cvsection}
+
+%------------------------------------------------------------
+\begin{cvsection}{Additional Experience and Awards}
+
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item \textbf{VectorLift (2026):} Semantic search on MS MARCO; BM25 + bi-encoder + cross-encoder re-ranker; NDCG@10/MRR@10 evals; Kafka + Qdrant + Elasticsearch + FastAPI + Streamlit
+      \item \textbf{Expertiza:} Ruby on Rails OSS (5K+ users, 300+ contributors); 110+ RSpec tests; 25\% coverage increase; 35\% redundancy reduction
+      \item \textbf{InventoryReservationService / PulseRank (2026):} Java 21 Spring Boot inventory API (PostgreSQL row-level locking, Testcontainers); event-driven leaderboard (MySQL outbox, MongoDB TTL, Redis, SSE, OpenTelemetry); HackNC24 Top 10; Sanjeevani Top 1\% of 1100+ teams; IEEE-published
+    \end{itemize}
+  \end{cvsubsection}
+
+\end{cvsection}
+
+%------------------------------------------------------------
+\begin{cvsection}{Languages and Technologies}
+
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item \textbf{Languages:} Python, TypeScript, JavaScript, Java, Ruby, SQL
+      \item \textbf{Technologies:} Node.js, FastAPI, React, Temporal.io, Kubernetes, Docker, Redis, PostgreSQL, MCP (Python + TS), Playwright, LLM APIs (Claude, GPT-4o, Gemini), Kafka, Grafana, GitHub Actions, KEDA, ArgoCD, Helm
+    \end{itemize}
+  \end{cvsubsection}
+
+\end{cvsection}
+
+\end{document}

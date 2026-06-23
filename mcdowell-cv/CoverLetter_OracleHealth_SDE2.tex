@@ -1,0 +1,61 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[margin=0.7in, top=0.6in, bottom=0.6in]{geometry}
+\usepackage{fontawesome5}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{parskip}
+
+\definecolor{OracleRed}{HTML}{C74634}
+\setmainfont{Times New Roman}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=OracleRed,
+  linkcolor=OracleRed
+}
+
+\begin{document}
+\thispagestyle{empty}
+
+{\large \textbf{Aditya Kulkarni}} \hfill
+{\color{OracleRed} \faPhone\ (281)-876-7066} \quad
+{\color{OracleRed} \faEnvelope\ adityakulkarnius@gmail.com} \\
+{\color{OracleRed} \faGithub\ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}} \quad
+{\color{OracleRed} \faGlobe\ \href{https://www.kulkarniaditya.com}{kulkarniaditya.com}}
+
+\vspace{6pt}
+{\color{OracleRed}\hrule height 1.2pt}
+\vspace{12pt}
+
+{\color{OracleRed} \textbf{Software Developer 2 --- Oracle Health}} \hfill June 20, 2026
+
+\vspace{10pt}
+
+Oracle Health is building the platform that modernizes how healthcare data flows, how claims are processed, and how AI improves patient outcomes. I have been building at exactly that intersection --- AI workflows over healthcare data at production scale.
+
+\vspace{6pt}
+
+\textbf{Why I am a strong fit:}
+
+\begin{itemize}
+  \item[\faAngleRight] \textbf{Healthcare AI in production.} At Mphasis I built 5+ AI workflows for health claim automation --- OCR, NLP, and ML pipelines processing 10K+ daily medical claims, improving document processing accuracy by 25\%. The domain Oracle Health is modernizing is one I have shipped production systems for.
+
+  \item[\faAngleRight] \textbf{Java + Spring Boot correctness.} \textit{InventoryReservationService}: Java 21 + Spring Boot REST API with PostgreSQL row-level locking, idempotent endpoints, Spring Security RBAC, Flyway migrations, and Testcontainers concurrency tests verifying exactly one success under race conditions. Clean, testable, production-grade Java.
+
+  \item[\faAngleRight] \textbf{Data pipelines and dashboards at scale.} VectorLift: Kafka-driven indexing pipeline into Elasticsearch and Qdrant vector store, FastAPI search API with per-stage latency tracking, Streamlit experiment comparison dashboard benchmarking 6 pipeline configurations with NDCG@10, MRR@10, and MAP. This is the "large data pipelines and dashboards" work the JD describes.
+
+  \item[\faAngleRight] \textbf{Cloud-native distributed systems.} KubeServe: Kubernetes-native LLM inference platform with KEDA autoscaler, Kopf CRD operator, OTel + Prometheus + Grafana observability, ArgoCD GitOps, 88 pytest tests, load tested to 500 VUs. Isomer AI: 30+ production deployments on Fly.io + Temporal.io across 7 enterprise insurance carrier tenants.
+\end{itemize}
+
+\vspace{8pt}
+
+Healthcare data at Oracle's scale is one of the most impactful engineering problems in existence. I want to build the platform that makes it work.
+
+\vspace{12pt}
+
+{\color{OracleRed} \textbf{Aditya Kulkarni}} \\
+\href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \quad $|$ \quad (281)-876-7066
+
+\end{document}

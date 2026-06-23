@@ -1,0 +1,67 @@
+\documentclass[11pt,letterpaper]{article}
+
+% --- Packages ---
+\usepackage[top=0.55in, bottom=0.55in, left=0.85in, right=0.85in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+% --- Colors ---
+\definecolor{SevenGreen}{HTML}{006B3C}
+\definecolor{DarkGrey}{HTML}{333333}
+
+\setstretch{1.0}
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\Huge \textbf{\color{SevenGreen} Aditya Kulkarni}}\\[8pt]
+    {\color{DarkGrey} \small
+    \faPhone \ (281) 876-7066 \quad \textbar \quad
+    \faEnvelope \ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \\[4pt]
+    \faLinkedin \ \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244} \quad \textbar \quad
+    \faGithub \ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+    }
+\end{center}
+
+\vspace{-4pt}
+{\color{SevenGreen}\rule{\linewidth}{1.5pt}}
+\vspace{10pt}
+
+% --- Date & Salutation ---
+June 12, 2026\\[10pt]
+\textbf{To the 7-Eleven AI Engineering Team,}
+
+\vspace{6pt}
+
+% --- Opening ---
+The AI SDLC team at 7-Eleven is solving a problem I find genuinely interesting: applying language models not to end users, but to the engineers building software at scale. Code generation, test creation, RAG-based knowledge search, and CI/CD automation across an organization with 86,000+ global locations is a different kind of reliability challenge than a typical AI product. I am completing my Master's in Computer Science at NC State and want to build these tools.
+
+\vspace{4pt}
+
+\begin{itemize}[leftmargin=*, itemsep=3pt, label={\color{SevenGreen}\faAngleRight}]
+    \item \textbf{LLM Evaluation — Built From Scratch:} I built a vendor-neutral evaluation harness in Python benchmarking Claude, GPT-4o, and Gemini across 2,000 frozen test examples: exact match, token F1, hallucination rate, p50/p95 latency, cost-per-call, and McNemar significance tests. Evaluating AI output quality and reliability is the core responsibility of this team, and I have built the tooling to do it rigorously.
+
+    \item \textbf{AI Into CI/CD Pipelines:} \textbf{CortexQ} ships multi-provider LLM routing as a Kubernetes platform with GitHub Actions CI, Helm + ArgoCD GitOps, and OpenTelemetry observability end-to-end. Integrating AI capabilities into engineering platforms is exactly the scope described in this role.
+
+    \item \textbf{LangChain + RAG + Workflow Orchestration:} At \textbf{Isomer AI}, I shipped production LangChain pipelines across Claude, GPT-4o, and Gemini with Temporal.io workflow orchestration --- the same stack the JD calls out: LangChain, RAG, tool orchestration, AI workflow automation.
+
+    \item \textbf{Cross-Functional Delivery:} At Isomer AI, I collaborated daily with product managers, designers, and engineers across 923 commits and 7 production deployments. At Mphasis, I worked with healthcare data teams and led model validation and red-teaming sessions. 7-Eleven's SDLC team requires the same cross-functional communication, and I have practiced it in production.
+\end{itemize}
+
+\vspace{6pt}
+
+% --- Closing ---
+I want to build AI tools that make engineers faster and software more reliable. 7-Eleven's scale makes that problem real and meaningful. I would welcome the chance to discuss.
+
+\vspace{12pt}
+
+\textbf{Sincerely,}\\[8pt]
+Aditya Kulkarni
+
+\end{document}

@@ -1,0 +1,68 @@
+\documentclass[11pt,letterpaper]{article}
+
+% --- Packages ---
+\usepackage[top=0.55in, bottom=0.55in, left=0.85in, right=0.85in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+% --- Colors ---
+\definecolor{CrowdStrikeRed}{HTML}{C8102E}
+\definecolor{DarkGrey}{HTML}{333333}
+
+\setstretch{1.0}
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\Huge \textbf{\color{CrowdStrikeRed} Aditya Kulkarni}}\\[8pt]
+    {\color{DarkGrey} \small
+    \faMapMarker* \ Sunnyvale, CA \quad \textbar \quad
+    \faPhone \ (281) 876-7066 \quad \textbar \quad
+    \faEnvelope \ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \\[4pt]
+    \faLinkedin \ \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244} \quad \textbar \quad
+    \faGithub \ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+    }
+\end{center}
+
+\vspace{-4pt}
+{\color{CrowdStrikeRed}\rule{\linewidth}{1.5pt}}
+\vspace{10pt}
+
+% --- Date & Salutation ---
+June 14, 2026\\[10pt]
+\textbf{To the NGSIEM Agentic AI Team at CrowdStrike,}
+
+\vspace{6pt}
+
+% --- Opening ---
+CrowdStrike processes almost 3 trillion security events per day. Building intelligent agentic systems on top of that data---retrieval pipelines, ML models, and AI agents that actually work in adversarial, high-stakes conditions---is the kind of engineering I want to build my career on. The NGSIEM Agentic AI Engineer I role sits at exactly that intersection.
+
+\vspace{4pt}
+
+\begin{itemize}[leftmargin=*, itemsep=3pt, label={\color{CrowdStrikeRed}\faAngleRight}]
+    \item \textbf{Agentic AI in Production:} At \textbf{Isomer AI}, I shipped 10+ production AI features into enterprise workflows---multi-model LLM pipelines (Claude, GPT-4o, Gemini), Temporal.io agentic workflows with MCP tooling, and full Auth0 RBAC---across 923 commits and 7 deployments. I owned the backend through incidents and SLA commitments, not just initial shipping. My \textbf{AlgoPulse} project scaled an event-driven AI orchestration platform to 2,000 async inference requests/second using Temporal.io and Kafka for fault-tolerant state synchronization.
+
+    \item \textbf{Search, Retrieval, and ML Pipelines:} I built \textbf{VectorLift}, a production-grade semantic search system on MS MARCO combining BM25 (Elasticsearch), fine-tuned bi-encoder retrieval, and cross-encoder re-ranking---evaluated across 6 pipeline configurations with NDCG@10, MRR@10, and MAP, with a Kafka-driven indexing pipeline feeding both Elasticsearch and Qdrant. This is the retrieval architecture that NGSIEM needs: fast lexical search, dense retrieval, and reranking at query time.
+
+    \item \textbf{Distributed Systems and Python:} My \textbf{CortexQ} project is a Kubernetes-native LLM inference platform in Python: FastAPI router with EWMA latency-aware load balancing, a Kopf CRD operator reconciling KEDA ScaledObjects, circuit breaker logic, and an OpenTelemetry + Prometheus + Grafana observability stack---load tested to 500 VUs and validated with 88 pytest integration tests. At \textbf{Capgemini}, I built Kafka + Spark + Hadoop pipelines that cut data-processing latency by 20\%.
+
+    \item \textbf{Cybersecurity Background:} My Springer-published research on \textit{Computer Vision-Based Cybersecurity Threat Detection} (icSoftComp 2023) is directly relevant to CrowdStrike's mission. I understand threat modeling and adversarial data, not just AI engineering---a combination that matters on the NGSIEM team where the models run on real attack telemetry.
+\end{itemize}
+
+\vspace{6pt}
+
+% --- Closing ---
+CrowdStrike's problem space---AI agents reasoning over petabyte-scale security telemetry in real time---is one of the hardest engineering challenges in industry. I want to work on it from day one. I would welcome the opportunity to discuss how my background fits the NGSIEM team.
+
+\vspace{12pt}
+
+\textbf{Sincerely,}\\[8pt]
+Aditya Kulkarni
+
+\end{document}

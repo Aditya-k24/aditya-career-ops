@@ -1,0 +1,71 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=0.75in, top=0.6in, bottom=0.6in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{fontspec}
+
+\setmainfont{Times New Roman}
+
+\definecolor{WorkOSPurple}{HTML}{6C47FF}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=WorkOSPurple,
+  linkcolor=WorkOSPurple
+}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Aditya Kulkarni}} \\[4pt]
+  \small
+  \faPhone\ (281)-876-7066 \quad
+  \faEnvelope\ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \quad
+  \faGlobe\ \href{https://www.kulkarniaditya.com}{kulkarniaditya.com} \quad
+  \faLinkedin\ \href{https://www.linkedin.com/in/adityakulkarni244/}{linkedin.com/in/adityakulkarni244} \quad
+  \faGithub\ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+\end{center}
+
+\vspace{6pt}
+
+June 16, 2026
+
+\vspace{6pt}
+
+Hiring Team \\
+WorkOS \\
+Remote
+
+\vspace{10pt}
+
+Dear WorkOS Team,
+
+\vspace{6pt}
+
+WorkOS is solving a problem I've worked on directly: making it possible for AI agents to authenticate, take action, and integrate with the systems businesses already use. The question of who an agent is and what it can do is one I've been building around for the past year. I'm applying for the Applied AI Engineer role.
+
+\vspace{8pt}
+
+Here's the direct overlap:
+
+\begin{itemize}[leftmargin=1.2em, itemsep=4pt]
+  \item[\textcolor{WorkOSPurple}{\faAngleRight}] \textbf{MCP tooling in production — shipped at Isomer.} WorkOS lists MCP experience as a differentiator. At Isomer AI, I built and deployed Temporal.io agentic workflows with MCP tooling into enterprise client environments, handling authentication, tool-calling, and multi-step orchestration across Claude, GPT-4o, and Gemini. This is not side-project exposure — it ran under SLA for paying customers.
+  \item[\textcolor{WorkOSPurple}{\faAngleRight}] \textbf{Auth0 RBAC + enterprise identity, directly relevant.} WorkOS is the enterprise auth layer. At Isomer, I implemented Auth0 RBAC across the full backend stack for enterprise clients — managing roles, permissions, and access control at the application layer. I understand the identity problem from the integration side that WorkOS customers face.
+  \item[\textcolor{WorkOSPurple}{\faAngleRight}] \textbf{Production LLM systems with observability.} CortexQ is a Python FastAPI microservice that routes LLM inference across Claude, GPT-4o, and Gemini with EWMA load balancing, Redis queuing, and a full OpenTelemetry + Prometheus + Grafana observability stack. AlgoPulse is a TypeScript event-driven agentic platform using Temporal.io and Kafka, scaled to 2,000 concurrent requests with zero state loss. I build for production, not demos.
+  \item[\textcolor{WorkOSPurple}{\faAngleRight}] \textbf{Idea to production in days.} At Isomer, I shipped 10+ production AI features across 923 commits and 7 deployments over 12 months, resolving incidents on-call and maintaining enterprise SLA. The bias-toward-action standard WorkOS describes is how I already work.
+\end{itemize}
+
+\vspace{8pt}
+
+I'd welcome the chance to talk about how my experience maps to the Applied AI team's roadmap.
+
+\vspace{10pt}
+
+Sincerely, \\[4pt]
+\textbf{Aditya Kulkarni}
+
+\end{document}

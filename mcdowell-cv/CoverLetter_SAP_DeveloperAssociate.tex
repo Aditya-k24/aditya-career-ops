@@ -1,0 +1,61 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[margin=0.7in, top=0.6in, bottom=0.6in]{geometry}
+\usepackage{fontawesome5}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{parskip}
+
+\definecolor{SAPBlue}{HTML}{0070F2}
+\setmainfont{Times New Roman}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=SAPBlue,
+  linkcolor=SAPBlue
+}
+
+\begin{document}
+\thispagestyle{empty}
+
+{\large \textbf{Aditya Kulkarni}} \hfill
+{\color{SAPBlue} \faPhone\ (281)-876-7066} \quad
+{\color{SAPBlue} \faEnvelope\ adityakulkarnius@gmail.com} \\
+{\color{SAPBlue} \faGithub\ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}} \quad
+{\color{SAPBlue} \faGlobe\ \href{https://www.kulkarniaditya.com}{kulkarniaditya.com}}
+
+\vspace{6pt}
+{\color{SAPBlue}\hrule height 1.2pt}
+\vspace{12pt}
+
+{\color{SAPBlue} \textbf{Developer Associate --- Next-Gen Supplier Management}} \hfill June 19, 2026
+
+\vspace{10pt}
+
+SAP's supplier management platform connects procurement workflows, inventory, and supplier data at enterprise scale. That distributed integration surface is exactly where I want to build.
+
+\vspace{6pt}
+
+\textbf{Why I am a strong fit:}
+
+\begin{itemize}
+  \item[\faAngleRight] \textbf{Java 21 + Spring Boot --- production depth.} Built \textit{InventoryReservationService}: REST API with PostgreSQL row-level locking (\texttt{SELECT FOR UPDATE}) across multi-SKU reservations, idempotent endpoints, RFC 9457 error responses, Flyway migrations, Spring Security RBAC, and Testcontainers integration tests that verify exactly one success and one 409 Conflict under concurrent load. This is the concurrency and correctness rigor the role demands.
+
+  \item[\faAngleRight] \textbf{Enterprise platform delivery at scale.} At Isomer AI I shipped production features across a per-tenant insurance carrier platform --- each customer running its own Fly.io + Supabase + Temporal Cloud stack. 923 commits, 7 production deployments, full ownership from feature planning through debugging to direct customer communication.
+
+  \item[\faAngleRight] \textbf{Distributed systems and incident debugging.} Built CortexQ, a Kubernetes-native LLM inference platform with KEDA autoscaling, circuit breakers, and ArgoCD GitOps --- load tested to 500 VUs. At Capgemini I reduced ticket resolution time 15\% by identifying Kafka pipeline bottlenecks under batch load.
+
+  \item[\faAngleRight] \textbf{Cross-functional collaboration.} Graduate coursework in Distributed Systems, Computer Networks, OOP, and Software Engineering paired with three production internship cycles gives me the technical vocabulary to ramp quickly with senior engineers and communicate root cause clearly to customers.
+\end{itemize}
+
+\vspace{8pt}
+
+SAP's cloud transformation makes this an inflection point worth joining early. I am ready to contribute to next-gen supplier management from day one.
+
+\vspace{12pt}
+
+{\color{SAPBlue} \textbf{Aditya Kulkarni}} \\
+\href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \quad $|$ \quad (281)-876-7066
+
+\end{document}

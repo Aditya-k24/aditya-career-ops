@@ -1,0 +1,67 @@
+\documentclass[11pt,letterpaper]{article}
+
+% --- Packages ---
+\usepackage[top=0.55in, bottom=0.55in, left=0.85in, right=0.85in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+% --- Colors ---
+\definecolor{ReplitOrange}{HTML}{F26207}
+\definecolor{DarkGrey}{HTML}{333333}
+
+\setstretch{1.0}
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\Huge \textbf{\color{ReplitOrange} Aditya Kulkarni}}\\[8pt]
+    {\color{DarkGrey} \small
+    \faPhone \ (281) 876-7066 \quad \textbar \quad
+    \faEnvelope \ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \\[4pt]
+    \faLinkedin \ \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244} \quad \textbar \quad
+    \faGithub \ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+    }
+\end{center}
+
+\vspace{-4pt}
+{\color{ReplitOrange}\rule{\linewidth}{1.5pt}}
+\vspace{10pt}
+
+% --- Date & Salutation ---
+June 19, 2026\\[10pt]
+\textbf{To the Replit Engineering Team,}
+
+\vspace{6pt}
+
+% --- Opening ---
+The hardest part of building on a cloud platform is not the infrastructure itself --- it is the gap between what the platform exposes and what the user actually needs to succeed. Replit Cloud bridges that gap by owning the full stack: databases, storage, hosting, domains, dev/prod splits. The opportunity to build first-party cloud infrastructure that powers Replit Agent for millions of users is exactly the kind of problem I want to work on.
+
+\vspace{4pt}
+
+\begin{itemize}[leftmargin=*, itemsep=3pt, label={\color{ReplitOrange}\faAngleRight}]
+    \item \textbf{Full-Stack TypeScript, Shipped to Production:} At \textbf{Isomer AI}, I owned the full React/Node.js + TypeScript codebase --- PostgreSQL, Redis, Docker, Terraform, Auth0 RBAC --- shipping 10+ production AI features across 923 commits and 7 deployments. This is the same full-stack surface area Replit Cloud engineers own end to end.
+
+    \item \textbf{Cloud Infrastructure from First Principles:} \textbf{CortexQ} is a Kubernetes-native LLM inference platform I built: KEDA autoscaler (scale-to-zero to N replicas), Kopf CRD operator, circuit breaker, EWMA load balancing, Helm + ArgoCD GitOps, and full OTel + Prometheus + Grafana observability. Building cloud infrastructure that actually holds under load requires exactly this kind of systems depth.
+
+    \item \textbf{Agentic AI at Scale:} \textbf{AlgoPulse} sustained 2,000 async inference requests per second on Temporal.io and Kafka with sub-200ms SSE delivery. I identified a polling failure mode under load and rebuilt the delivery layer using event-driven architecture. Production AI systems for Replit Agent demand exactly this kind of iteration under real constraints.
+
+    \item \textbf{Real-Time, Multi-DB Systems:} \textbf{PulseRank} is a TypeScript event-driven leaderboard: MySQL transactional writes, MongoDB TTL feed projections, Redis sorted sets for sub-millisecond reads, SSE delivery, load-tested at 10K concurrent users with Testcontainers + k6. Replit Cloud's database and storage layer is the same class of problem.
+\end{itemize}
+
+\vspace{6pt}
+
+% --- Closing ---
+Replit is removing the barrier between having an idea and having software that runs. The Replit Cloud team makes that possible for millions of users. I want to help build it. I would be glad to discuss.
+
+\vspace{12pt}
+
+\textbf{Sincerely,}\\[8pt]
+Aditya Kulkarni
+
+\end{document}

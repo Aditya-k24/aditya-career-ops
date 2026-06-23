@@ -22,6 +22,18 @@ modes/_profile.md
 .update-dismissed
 .update-lock
 
+# Secrets
+.env
+
+# McDowell CV build artifacts and PDFs
+mcdowell-cv/*.pdf
+mcdowell-cv/*.aux
+mcdowell-cv/*.log
+mcdowell-cv/*.out
+mcdowell-cv/*.synctex.gz
+mcdowell-cv/*.fls
+mcdowell-cv/*.fdb_latexmk
+
 # Generated
 .resolved-prompt-*
 node_modules/
@@ -36,3 +48,13 @@ node_modules/
 .claude/memory/
 career-dashboard
 package-lock.json
+
+# apply-bot outputs
+apply-bot/screenshots/
+apply-bot/logs/
+apply-bot/answers/*.yml
+!apply-bot/answers/template.yml
+
+# Outreach tool
+outreach/sent-log.json
+outreach/linkedin-*.md

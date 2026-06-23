@@ -1,0 +1,67 @@
+\documentclass[11pt,letterpaper]{article}
+
+% --- Packages ---
+\usepackage[top=0.55in, bottom=0.55in, left=0.85in, right=0.85in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+% --- Colors ---
+\definecolor{WisprNavy}{HTML}{0A2342}
+\definecolor{DarkGrey}{HTML}{333333}
+
+\setstretch{1.0}
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\Huge \textbf{\color{WisprNavy} Aditya Kulkarni}}\\[8pt]
+    {\color{DarkGrey} \small
+    \faPhone \ (281) 876-7066 \quad \textbar \quad
+    \faEnvelope \ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \\[4pt]
+    \faLinkedin \ \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244} \quad \textbar \quad
+    \faGithub \ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+    }
+\end{center}
+
+\vspace{-4pt}
+{\color{WisprNavy}\rule{\linewidth}{1.5pt}}
+\vspace{10pt}
+
+% --- Date & Salutation ---
+June 12, 2026\\[10pt]
+\textbf{To the Wispr Flow Engineering Team,}
+
+\vspace{6pt}
+
+% --- Opening ---
+Sutton's Bitter Lesson holds: general methods that leverage scale beat hand-crafted solutions over time. Wispr Flow is applying this principle to the one interface we still haven't scaled past our own limitations --- human voice. A dictation product that 1.5 million people reach for instead of their keyboards isn't just a feature; it's proof that the interface layer is being rebuilt from scratch. The Labs team is where I want to be while that happens.
+
+\vspace{4pt}
+
+\begin{itemize}[leftmargin=*, itemsep=3pt, label={\color{WisprNavy}\faAngleRight}]
+    \item \textbf{Prototype to Production, End-to-End:} I built \textbf{AlgoPulse} from scratch --- agentic AI orchestration on Temporal.io and Kafka, sustaining 2,000 async inference requests per second with sub-200ms SSE delivery to clients. I identified the API-polling bottleneck under load, pivoted to Supabase Edge Functions, and shipped a working system. Labs is prototype-first; I've done that under pressure in 48-hour hackathons and in production.
+
+    \item \textbf{Agentic Framework Experience:} At \textbf{Isomer AI}, I shipped Temporal.io agentic workflows and multi-model LLM pipelines (Claude, GPT-4o, Gemini) into a production product. The next evolution of Wispr Flow --- native actions that understand context and act reliably --- is exactly the architecture I've built and debugged at scale.
+
+    \item \textbf{Real-Time Systems Depth:} \textbf{PulseRank} showed I understand low-latency data flows end-to-end: Redis sorted sets for sub-millisecond reads, SSE for live updates, Testcontainers for consistency validation at 10K concurrent users. Voice AI demands the same rigor: you can't buffer or retry a spoken command.
+
+    \item \textbf{Bias Toward Shipping:} 923 commits and 7 production deployments at Isomer AI in under a year. Six national hackathon placements with full-stack MVPs built end-to-end in 48-hour sprints. I'm attached to the mission, not any one implementation.
+\end{itemize}
+
+\vspace{6pt}
+
+% --- Closing ---
+Wispr Flow is solving the right problem at the right moment. I want to help build the agentic layer that comes next. I would love to talk.
+
+\vspace{12pt}
+
+\textbf{Sincerely,}\\[8pt]
+Aditya Kulkarni
+
+\end{document}

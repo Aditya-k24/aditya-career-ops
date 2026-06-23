@@ -1,0 +1,67 @@
+\documentclass[11pt,letterpaper]{article}
+
+% --- Packages ---
+\usepackage[top=0.55in, bottom=0.55in, left=0.85in, right=0.85in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+% --- Colors ---
+\definecolor{AirwallexNavy}{HTML}{1C2B5E}
+\definecolor{DarkGrey}{HTML}{333333}
+
+\setstretch{1.0}
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\Huge \textbf{\color{AirwallexNavy} Aditya Kulkarni}}\\[8pt]
+    {\color{DarkGrey} \small
+    \faPhone \ (281) 876-7066 \quad \textbar \quad
+    \faEnvelope \ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \\[4pt]
+    \faLinkedin \ \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244} \quad \textbar \quad
+    \faGithub \ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+    }
+\end{center}
+
+\vspace{-4pt}
+{\color{AirwallexNavy}\rule{\linewidth}{1.5pt}}
+\vspace{10pt}
+
+% --- Date & Salutation ---
+June 17, 2026\\[10pt]
+\textbf{To the Airwallex AI Engineering Team,}
+
+\vspace{6pt}
+
+% --- Opening ---
+Financial operations are still largely manual for startups: payments routed by hand, payroll reconciled in spreadsheets, bookkeeping done after the fact. The problem is not a data problem or a model problem --- it is an orchestration problem. Airwallex has the financial infrastructure to fix it. The AI team's job is to build the reasoning layer on top. That is the problem I want to work on.
+
+\vspace{4pt}
+
+\begin{itemize}[leftmargin=*, itemsep=3pt, label={\color{AirwallexNavy}\faAngleRight}]
+    \item \textbf{Agentic Systems in Production:} I built \textbf{AlgoPulse} --- a full agentic AI orchestration platform on Temporal.io and Kafka, sustaining 2,000 async inference requests per second with sub-200ms SSE delivery. I identified an API-polling failure mode under load and rebuilt the delivery layer using event-driven streaming. Multi-step reasoning pipelines that work reliably at scale require exactly this kind of iteration.
+
+    \item \textbf{Multi-Model LLM Pipelines, Shipped:} At \textbf{Isomer AI}, I built production LLM features across Claude, GPT-4o, and Gemini --- tool-calling, RAG integrations, Temporal.io workflow orchestration --- across 923 commits and 7 production deployments. This is the stack Airwallex is using: LangChain, agentic frameworks, multi-provider model selection based on task fit.
+
+    \item \textbf{Evaluation and Monitoring Rigor:} I built an LLM evaluation harness from scratch --- 2,000 frozen test examples, hallucination rate tracking, p50/p95 latency, cost-per-call, McNemar significance tests across 6 metrics. Production AI that ``improves with usage'' requires knowing exactly how it is failing before you can make it better.
+
+    \item \textbf{Fintech RAG Context:} \textbf{GlanceAI} was a compliance-ready RAG system I built for fintech and healthcare environments: per-tenant vector isolation, deterministic output architecture for regulated data. Airwallex's AI operates in exactly this kind of environment --- high-stakes, auditable, no hallucinations allowed.
+\end{itemize}
+
+\vspace{6pt}
+
+% --- Closing ---
+Airwallex is solving the right problem at the right moment with infrastructure no one else has. I want to build the AI layer that makes it automatic. I would be glad to discuss.
+
+\vspace{12pt}
+
+\textbf{Sincerely,}\\[8pt]
+Aditya Kulkarni
+
+\end{document}

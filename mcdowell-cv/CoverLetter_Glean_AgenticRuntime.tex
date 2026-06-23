@@ -1,0 +1,50 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[top=0.55in, bottom=0.55in, left=0.85in, right=0.85in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{setspace}
+\definecolor{GleanBlue}{HTML}{1B5E8A}
+\definecolor{DarkGrey}{HTML}{333333}
+\setstretch{1.0}
+\begin{document}
+\begin{center}
+    {\Huge \textbf{\color{GleanBlue} Aditya Kulkarni}}\\[8pt]
+    {\color{DarkGrey} \small
+    \faPhone \ (281) 876-7066 \quad \textbar \quad
+    \faEnvelope \ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \\[4pt]
+    \faLinkedin \ \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244} \quad \textbar \quad
+    \faGithub \ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+    }
+\end{center}
+\vspace{-4pt}
+{\color{GleanBlue}\rule{\linewidth}{1.5pt}}
+\vspace{10pt}
+
+June 21, 2026\\[10pt]
+\textbf{To the Glean Engineering Team,}
+
+\vspace{6pt}
+
+Agents fail at runtime, not at design time. The reliability, latency, and observability gaps in production agentic systems are exactly the problems I have been solving --- circuit breakers that prevent cascading LLM failures, OTel traces that make multi-turn tool invocations debuggable, and Temporal.io orchestration that gives agents durable, recoverable execution. Glean's Agentic Runtime team is building this infrastructure at enterprise scale. I want to help build it.
+
+\vspace{4pt}
+\begin{itemize}[leftmargin=*, itemsep=3pt, label={\color{GleanBlue}\faAngleRight}]
+    \item \textbf{Distributed Agentic Runtime, Built from First Principles:} \textbf{KubeServe} is a Kubernetes-native LLM inference platform I built: FastAPI router, KEDA autoscaler, Kopf CRD operator for multi-provider LLM serving, circuit breaker with EWMA load balancing, and full OTel + Prometheus + Grafana observability. This is the same fault-isolation, retry, and backpressure architecture that Glean's runtime needs at scale.
+
+    \item \textbf{Multi-Turn Orchestration with Durable Execution:} At \textbf{Isomer AI}, I built production agentic workflows on Temporal.io: per-tenant durable orchestration, LLM risk signal pipelines across Claude/GPT-4o/Gemini, and MCP server tool integrations. In \textbf{AlgoPulse}, I extended this to Kafka-backed multi-turn reasoning at 2,000 async inference requests per second with sub-100ms streaming delivery. Temporal.io durable execution, tool invocation, retry, and termination logic --- I have implemented all of it in production.
+
+    \item \textbf{Multi-LLM Provider Integration and Eval Frameworks:} \textbf{LLM Eval Harness} is a vendor-neutral Python evaluation system I built comparing Claude, GPT-4o, and Gemini across 2,000 frozen labeled examples --- hallucination rate, p50/p95 latency, cost-per-call, McNemar significance tests. The role calls out ``integrate with leading LLM providers and internal evaluation frameworks'' --- this is exactly what I built.
+
+    \item \textbf{Production Observability and SLOs:} Across KubeServe and Isomer, I instrumented agent pipelines end-to-end with OpenTelemetry traces, Prometheus metrics, and Grafana dashboards. I have set up latency SLOs, tail behavior monitoring, and on-call playbooks for agentic systems.
+\end{itemize}
+\vspace{6pt}
+
+Glean's agentic runtime is the infrastructure that makes enterprise AI reliable, not just impressive. I want to help build it to the standard enterprise customers demand. I would be glad to discuss.
+
+\vspace{12pt}
+\textbf{Sincerely,}\\[8pt]
+Aditya Kulkarni
+\end{document}

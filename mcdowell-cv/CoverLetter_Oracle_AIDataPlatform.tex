@@ -1,0 +1,61 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[margin=0.7in, top=0.6in, bottom=0.6in]{geometry}
+\usepackage{fontawesome5}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{parskip}
+
+\definecolor{OracleRed}{HTML}{C74634}
+\setmainfont{Times New Roman}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=OracleRed,
+  linkcolor=OracleRed
+}
+
+\begin{document}
+\thispagestyle{empty}
+
+{\large \textbf{Aditya Kulkarni}} \hfill
+{\color{OracleRed} \faPhone\ (281)-876-7066} \quad
+{\color{OracleRed} \faEnvelope\ adityakulkarnius@gmail.com} \\
+{\color{OracleRed} \faGithub\ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}} \quad
+{\color{OracleRed} \faGlobe\ \href{https://www.kulkarniaditya.com}{kulkarniaditya.com}}
+
+\vspace{6pt}
+{\color{OracleRed}\hrule height 1.2pt}
+\vspace{12pt}
+
+{\color{OracleRed} \textbf{Senior SDE --- AI Data Platform (FDE), Oracle}} \hfill June 20, 2026
+
+\vspace{10pt}
+
+Oracle's FDE AI Data Platform team is building the infrastructure that makes generative AI and real-time analytics work at OCI scale. I have built both sides of that stack --- LLM serving infrastructure and AI data platform engineering --- in production.
+
+\vspace{6pt}
+
+\textbf{Why I am a strong fit:}
+
+\begin{itemize}
+  \item[\faAngleRight] \textbf{LLM serving platform at infrastructure depth.} KubeServe: Kubernetes-native LLM inference platform with FastAPI router, KEDA autoscaler (scale-to-zero to N replicas), Kopf CRD operator managing multi-provider LLM backends, circuit breaker + EWMA load balancing, and OTel + Prometheus + Grafana full observability. This is the "power generative AI and LLMs at scale" work the FDE team does --- I built it from scratch.
+
+  \item[\faAngleRight] \textbf{Real-time analytics data platform.} VectorLift: Kafka-driven indexing pipeline into Elasticsearch and Qdrant vector store, FastAPI search API, Streamlit analytics dashboard benchmarking 6 retrieval pipeline configurations with NDCG@10, MRR@10, and MAP. Built to understand which data platform decisions move the metrics that matter.
+
+  \item[\faAngleRight] \textbf{Enterprise customer deployments (FDE context).} At Isomer AI I was the engineer who shipped and owned 30+ per-tenant production deployments for enterprise insurance carriers --- each with its own Fly.io + Supabase + Temporal Cloud stack. The FDE role requires shipping reliable AI systems directly into customer environments; that is exactly what I did at Isomer.
+
+  \item[\faAngleRight] \textbf{AI evaluation and observability across providers.} LLM Eval Harness: benchmarked Claude, GPT-4o, and Gemini across 2,000 frozen labeled examples tracking hallucination rate, p50/p95 latency, cost-per-call, and 6 metrics with McNemar significance tests. Data-driven LLM selection is the foundation of any production AI data platform.
+\end{itemize}
+
+\vspace{8pt}
+
+OCI is building the AI infrastructure layer that the next decade runs on. I want to help build the data platform that makes AI systems at that scale actually work.
+
+\vspace{12pt}
+
+{\color{OracleRed} \textbf{Aditya Kulkarni}} \\
+\href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \quad $|$ \quad (281)-876-7066
+
+\end{document}

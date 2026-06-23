@@ -1,0 +1,126 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+
+\documentclass[]{mcdowellcv}
+
+\usepackage{amsmath}
+\usepackage{hyperref}
+\geometry{top=0.3in}
+
+\name{Aditya Kulkarni}
+\address{\hspace{0.2\textwidth}\href{https://www.kulkarniaditya.com}{kulkarniaditya.com} \linebreak \href{https://www.linkedin.com/in/adityakulkarni244/}{linkedin.com/in/adityakulkarni244}}
+\location{Raleigh, NC}
+\contacts{(281)-876-7066 \linebreak adityakulkarnius@gmail.com \linebreak \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}}
+
+\begin{document}
+
+\makeheader
+
+\begin{cvsection}{Employment}
+  \begin{cvsubsection}{Product Engineer Intern}{Isomer AI}{May 2025 -- May 2026}
+    \begin{itemize}
+      \item Built MCP LLM pipelines (Claude, GPT-4o, Gemini); document processing (PDF gen, S3, email); Playwright coverage.
+      \item Owned 7-deployment Node.js backend: PostgreSQL, Redis, Auth0 RBAC, Temporal.io, Docker, Terraform, Sentry.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Graduate Research Assistant}{NC State University}{April 2025 -- Present}
+    \begin{itemize}
+      \item Cloud-based genomic platform on Google Cloud Run with JBrowse 2; 100+ researchers, 500GB datasets worldwide.
+      \item Improve ML model accuracy by 12\% via hyperparameter tuning and time-series analysis on biological sensor data.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Software Developer Intern}{Mphasis (HP Company)}{Jun 2024 -- Aug 2024}
+    \begin{itemize}
+      \item Built 5+ AI-driven workflows including health claim automation using OCR, NLP, and ML; improved accuracy by 25\%.
+      \item Automated AWS and GCP deployments via CI/CD; integrated Grafana monitoring and led model red-teaming for reliability.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{AI/ML Intern}{Capgemini}{Jun 2023 -- Aug 2023}
+    \begin{itemize}
+      \item Led end-to-end SDLC for data-driven system automating support ticket analysis, reducing processing time by 15\%.
+      \item Built Kafka + Spark + Hadoop pipelines for batch and real-time ingestion; cut ticket-processing latency by 20\%.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Education}
+  \begin{cvsubsection}{Raleigh, NC}{North Carolina State University}{Aug 2024 -- May 2026}
+    \begin{itemize}
+      \item Master of Science in Computer Science
+      \item Courses: Artificial Intelligence, Operating Systems, Algorithms, Data Science, Object Oriented Development, Software Engineering.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Mumbai, India}{Mumbai University}{Aug 2020 -- May 2024}
+    \begin{itemize}
+      \item Bachelor of Technology in Computer Science; CGPA: 9.32/10. Courses: Data Warehousing, Big Data Infra, DS \& Algorithms, Machine Learning, Blockchain.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Projects}
+  \begin{cvsubsection}{\href{https://github.com/ncsu-csc-501/project3-mndedhia_akulka26_aapai}{Demand Paging -- Xinu OS}}{Systems Programming}{Oct 2024 -- Dec 2024}
+    \begin{itemize}
+      \item Engineered 8-store virtual memory system in C for Xinu OS with Second-Chance page replacement; cut page faults 25\%.
+      \item Added 7+ kernel system calls, increasing memory performance by 15\% via inverted page tables and custom fault handler.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{PulseRank}{Real-Time Leaderboard}{2026}
+    \begin{itemize}
+      \item TypeScript/NestJS leaderboard: MySQL outbox, MongoDB TTL, Redis sorted sets; Testcontainers integration tests.
+      \item Shipped OpenTelemetry + Prometheus on all hot paths; load-tested with k6; deployed via GitHub Actions CI/CD.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{VectorLift}{Semantic Search Engine}{2026}
+    \begin{itemize}
+      \item Semantic search in Python on MS MARCO: BM25, dense bi-encoder (in-batch negatives), cross-encoder re-ranker.
+      \item Scored NDCG@10, MRR@10, MAP; FastAPI serving with per-stage latency; Kafka-driven Qdrant corpus indexing.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Inventory Reservation Service}{Backend API}{2026}
+    \begin{itemize}
+      \item Java 21/Spring Boot REST API: PostgreSQL row-level locking, idempotent POSTs, RFC 9457 errors, scheduled expiry.
+      \item Testcontainers: two concurrent POSTs produce exactly one 200, one 409; Flyway, Docker, GitHub Actions CI.
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Languages and Technologies}
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item \textbf{Languages:} C, Python, Java, TypeScript, JavaScript, SQL, Bash
+      \item \textbf{Systems \& Distributed:} Kernel programming, virtual memory, Kafka, Spark, Hadoop, Docker, Kubernetes, Terraform
+      \item \textbf{Backend \& Cloud:} Spring Boot, Node.js, FastAPI, NestJS, PostgreSQL, Redis, MySQL, AWS, GCP, GitHub Actions
+      \item \textbf{AI \& Tools:} Claude/GPT-4o/Gemini APIs, MCP, LangChain, OpenTelemetry, Prometheus, Testcontainers
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Additional Experience and Awards}
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item \textbf{IEEE Published:} Co-authored paper on CV-Based Cybersecurity Threat Detection (Springer icSoftComp 2023); presented to 500+ attendees.
+      \item \textbf{National Hackathon Winner:} Won or ranked Top 10 in 6+ national hackathons spanning ML, systems, and developer tools; built 3 complete MVPs end-to-end within 48-hour sprints, each with a working demo.
+      \item \textbf{Lead at Google Developers Student Club:} Led 4+ tech events (hackathons, conferences) reaching 500+ students.
+      \item \textbf{Technical Writing:} Published 3 technical deep-dives on LLM model collapse, AI agent security, and neural audio architecture at \href{https://www.kulkarniaditya.com/blog}{kulkarniaditya.com/blog}
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\end{document}

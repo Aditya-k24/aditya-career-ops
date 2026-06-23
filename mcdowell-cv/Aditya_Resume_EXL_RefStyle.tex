@@ -1,0 +1,135 @@
+%% Reference-style CV — matches WhatsApp reference layout
+
+\documentclass[9pt,letterpaper]{extarticle}
+
+\usepackage[top=0.38in, bottom=0.35in, left=0.55in, right=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{titlesec}
+
+\setmainfont{Times New Roman}
+\hypersetup{colorlinks=false, hidelinks}
+
+% Section: bold text + thin rule below
+\titleformat{\section}{\bfseries}{}{0em}{}[\vspace{-5pt}\rule{\linewidth}{0.4pt}\vspace{1pt}]
+\titlespacing*{\section}{0pt}{5pt}{1pt}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Tight bullets matching reference style
+\setlist[itemize]{
+  topsep=1pt,
+  itemsep=0pt,
+  parsep=0pt,
+  partopsep=0pt,
+  leftmargin=12pt,
+  label={$\bullet$}
+}
+
+% Entry heading: bold title (left) | bold company (center) | date (right)
+\newcommand{\entry}[3]{%
+  \noindent\textbf{#1}\hfill\textbf{#2}\hfill #3%
+}
+
+\begin{document}
+\pagestyle{empty}
+
+% ── Header ────────────────────────────────────────────────────────────────────
+\noindent
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} c @{\extracolsep{\fill}} r}
+  \small\href{https://www.kulkarniaditya.com}{kulkarniaditya.com} &
+  {\LARGE\textbf{Aditya Kulkarni}} &
+  \small (281)-876-7066 \\
+  \small\href{https://www.linkedin.com/in/adityakulkarni244/}{linkedin.com/in/adityakulkarni244/} &
+  \small New York, NY &
+  \small adityakulkarnius@gmail.com \\
+  & &
+  \small\href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+\end{tabular*}
+
+% ── Employment ─────────────────────────────────────────────────────────────────
+\section{Employment}
+
+\entry{Product Engineer Intern}{Isomer AI}{May 2025 -- May 2026}
+\begin{itemize}
+\item Deployed 10+ production AI features into enterprise workflows using Python and TypeScript, including multi-model LLM pipelines (Claude, GPT-4o, Gemini), Temporal.io agentic workflows with MCP tooling, and Auth0 RBAC; delivered across 923 commits and 7 production deployments.
+\item Owned the full backend stack -- PostgreSQL, Redis, Docker, Terraform, Sentry APM -- managing CI/CD pipelines, resolving production incidents, and maintaining SLA across enterprise client environments.
+\end{itemize}
+
+\vspace{2pt}
+\entry{Graduate Research Assistant}{NC State University}{April 2025 -- Present}
+\begin{itemize}
+\item Designed and deployed a cloud-based genomic data platform on GCP (Cloud Run) with JBrowse 2, enabling interactive exploration of 500GB+ strawberry and grape datasets for over 100 researchers worldwide.
+\item Collaborated on ML architecture design, applying hyperparameter tuning and time-series feature analysis to improve model accuracy by 12\% on biological sensor data.
+\end{itemize}
+
+\vspace{2pt}
+\entry{Software Developer Intern}{Mphasis (HP Company)}{Jun 2024 -- Aug 2024}
+\begin{itemize}
+\item Built 5+ AI-driven workflows including a health claim automation tool using OCR, NLP, and ML models, improving document processing accuracy by 25\% across high-volume enterprise insurance pipelines.
+\item Automated deployments on AWS and GCP via CI/CD pipelines, integrated Grafana monitoring dashboards, and led model red-teaming efforts to enhance production reliability.
+\end{itemize}
+
+\vspace{2pt}
+\entry{AI/ML Intern}{Capgemini}{Jun 2023 -- Aug 2023}
+\begin{itemize}
+\item Led end-to-end SDLC for a data-driven support ticket analysis system using NLP classification, reducing average resolution time by 15\% across enterprise clients.
+\item Implemented distributed data pipelines using Hadoop and Spark for batch processing, and integrated Kafka streaming for real-time data ingestion, cutting ticket-processing latency by 20\%.
+\end{itemize}
+
+% ── Education ──────────────────────────────────────────────────────────────────
+\section{Education}
+
+\entry{Raleigh, NC}{North Carolina State University}{Aug 2024 -- May 2026}
+\begin{itemize}
+\item Master of Science in Computer Science. Courses: Artificial Intelligence, Operating Systems, Algorithms, Data Science, Object Oriented Development, Software Engineering.
+\end{itemize}
+
+\vspace{2pt}
+\entry{Mumbai, India}{Mumbai University}{August 2020 -- May 2024}
+\begin{itemize}
+\item Bachelor of Technology in Computer Science; CGPA: 9.32/10. Courses: Data Warehousing, Big Data Infra, DS \& Algorithms, Machine Learning, Software Engineering, Blockchain.
+\end{itemize}
+
+% ── Projects ───────────────────────────────────────────────────────────────────
+\section{Projects}
+
+\entry{LLM Eval Harness}{AI Model Validation Platform}{2025}
+\begin{itemize}
+\item Built a vendor-neutral evaluation harness comparing Claude, GPT-4o, and Gemini across 2,000 frozen examples, tracking ExactMatch, TokenF1, hallucination rate, abstention accuracy, p50/p95 latency, and cost-per-call.
+\item Applied Bootstrap confidence intervals and McNemar tests with Holm-Bonferroni correction across 3 repeated runs per model to surface statistically significant regressions; exported metrics to a DuckDB + Parquet + Streamlit dashboard.
+\end{itemize}
+
+\vspace{2pt}
+\entry{AlgoPulse}{Full-Stack Agentic AI Platform}{2025}
+\begin{itemize}
+\item Orchestrated multi-step agentic AI reasoning pipelines on Temporal.io and Kafka, sustaining 2,000 async inference requests per second under sustained production load with zero message loss or state corruption.
+\item Replaced API polling with event-driven Supabase Edge Functions, delivering real-time AI streaming to React Native clients with sub-200ms SSE latency and eliminating state loss under 2,000 req/sec sustained load.
+\end{itemize}
+
+\vspace{2pt}
+\entry{CortexQ}{Kubernetes LLM Inference Platform}{2026}
+\begin{itemize}
+\item Built a Kubernetes-native LLM inference platform on GCP with a FastAPI router, KEDA autoscaler (scale-to-zero to N replicas), Kopf CRD operator for multi-provider LLM serving, and circuit breaker + EWMA load balancing.
+\item Instrumented OpenTelemetry traces, Prometheus metrics, and Grafana dashboards across all service boundaries; automated Helm and ArgoCD GitOps deployments; load tested to 500 VUs with k6; validated with 88 pytest tests.
+\end{itemize}
+
+% ── Languages and Technologies ─────────────────────────────────────────────────
+\section{Languages and Technologies}
+\begin{itemize}
+\item \textbf{Languages:} Python, TypeScript, JavaScript, Java, Scala, SQL, Bash
+\item \textbf{AI/ML:} Claude/GPT-4o/Gemini APIs, LangChain, RAG, LLM evaluation, scikit-learn, PyTorch, TensorFlow, Pandas, DuckDB, Spark
+\item \textbf{Cloud \& DevOps:} AWS, GCP, Azure, Docker, Kubernetes, CI/CD, Terraform, Helm, ArgoCD, OpenTelemetry, Prometheus, Grafana
+\item \textbf{Frameworks/Tools:} FastAPI, Node.js, NestJS, React, Temporal.io, Kafka, PostgreSQL, Redis, REST APIs, Streamlit, Git
+\end{itemize}
+
+% ── Additional ─────────────────────────────────────────────────────────────────
+\section{Additional Experience and Awards}
+\begin{itemize}
+\item \textbf{Lead at Google Developers Student Club:} Led 4+ tech events (hackathons, conferences) reaching 500+ students.
+\item \textbf{National Hackathon Winner \& IEEE Published:} Ranked Top 10 in 6+ national hackathons, built 3 MVPs in 48-hour sprints; co-authored Cybersecurity Threat Detection paper (Springer icSoftComp 2023), presented to 500+ attendees.
+\end{itemize}
+
+\end{document}

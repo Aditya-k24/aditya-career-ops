@@ -1,0 +1,125 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+
+\documentclass[]{mcdowellcv}
+
+\usepackage{amsmath}
+\usepackage{hyperref}
+\geometry{top=0.3in}
+
+\name{Aditya Kulkarni}
+\address{\hspace{0.2\textwidth}\href{https://www.kulkarniaditya.com}{kulkarniaditya.com} \linebreak \href{https://www.linkedin.com/in/adityakulkarni244/}{linkedin.com/in/adityakulkarni244}}
+\location{Raleigh, NC}
+\contacts{(281)-876-7066 \linebreak adityakulkarnius@gmail.com \linebreak \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}}
+
+\begin{document}
+
+\makeheader
+
+\begin{cvsection}{Employment}
+  \begin{cvsubsection}{Product Engineer Intern}{Isomer AI}{May 2025 -- May 2026}
+    \begin{itemize}
+      \item Provisioned and managed cloud infrastructure with Terraform; owned CI/CD pipelines via GitHub Actions across 7 production deployments in TypeScript/Node.js with Docker and Sentry observability.
+      \item Engineered multi-model LLM pipelines (Claude, GPT-4o, Gemini) via MCP; built document processing (PDF gen, email parsing, S3) and full Playwright automated test coverage.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Graduate Research Assistant}{NC State University}{April 2025 -- Present}
+    \begin{itemize}
+      \item Deployed cloud-based genomic data platform on Google Cloud Run with JBrowse 2, enabling 100+ researchers to explore 500GB datasets; managed GCP infrastructure and deployment pipelines.
+      \item Improve ML model accuracy by 12\% via hyperparameter tuning and time-series analysis on biological sensor data.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Software Developer Intern}{Mphasis (HP Company)}{Jun 2024 -- Aug 2024}
+    \begin{itemize}
+      \item Automated AWS and GCP deployments via CI/CD; integrated Grafana monitoring and led model red-teaming for reliability.
+      \item Built 5+ AI-driven workflows including health claim automation using OCR, NLP, and ML; improved processing accuracy by 25\%.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{AI/ML Intern}{Capgemini}{Jun 2023 -- Aug 2023}
+    \begin{itemize}
+      \item Led end-to-end SDLC for data-driven system automating support ticket analysis, reducing processing time by 15\%.
+      \item Built distributed Kafka + Spark + Hadoop pipelines for batch and real-time ingestion, cutting ticket-processing latency by 20\%.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Education}
+  \begin{cvsubsection}{Raleigh, NC}{North Carolina State University}{Aug 2024 -- May 2026}
+    \begin{itemize}
+      \item Master of Science in Computer Science
+      \item Courses: Artificial Intelligence, Operating Systems, Algorithms, Data Science, Object Oriented Development, Software Engineering.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Mumbai, India}{Mumbai University}{Aug 2020 -- May 2024}
+    \begin{itemize}
+      \item Bachelor of Technology in Computer Science; CGPA: 9.32/10. Courses: Data Warehousing, Big Data Infra, DS \& Algorithms, Machine Learning, Blockchain.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Projects}
+  \begin{cvsubsection}{PulseRank}{Real-Time Leaderboard}{2026}
+    \begin{itemize}
+      \item Built event-driven platform in TypeScript/NestJS/Next.js: MySQL outbox, MongoDB TTL projections, Redis sorted sets; Testcontainers integration tests for multi-store consistency.
+      \item Shipped OpenTelemetry + Prometheus observability on all hot paths; load-tested with k6; deployed via GitHub Actions CI/CD.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{\href{https://github.com/ncsu-csc-501/project3-mndedhia_akulka26_aapai}{Demand Paging -- Xinu OS}}{Systems Programming}{Oct 2024 -- Dec 2024}
+    \begin{itemize}
+      \item Engineered 8-store virtual memory system in C for Xinu OS with Second-Chance page replacement; reduced page faults by 25\%.
+      \item Added 7+ kernel system calls, increasing memory performance by 15\% using inverted page tables and a custom fault handler.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{VectorLift}{Semantic Search Engine}{2026}
+    \begin{itemize}
+      \item Built semantic search on MS MARCO in Python: BM25 (Elasticsearch), dense bi-encoder with in-batch negatives, cross-encoder re-ranker.
+      \item Served via FastAPI with per-stage latency tracking; Kafka-driven corpus indexing into Qdrant; Docker Compose for local infra.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{LLM Eval Harness}{Independent Project}{2025}
+    \begin{itemize}
+      \item Built vendor-neutral LLM benchmark comparing Claude, GPT-4o, Gemini across 2,000 frozen examples and 3 task types in Python.
+      \item Tracked hallucination rate, p50/p95 latency, cost-per-call; applied bootstrap CIs and McNemar tests across 6 metrics.
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Languages and Technologies}
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item \textbf{Languages:} Python, C, TypeScript, Java, JavaScript, Bash, SQL
+      \item \textbf{Cloud \& Infra:} GCP, AWS, Docker, Kubernetes, Terraform, CI/CD, GitHub Actions, Grafana, OpenTelemetry, Prometheus
+      \item \textbf{Testing \& Reliability:} Testcontainers, Playwright, k6, unit/integration testing, red-teaming, TDD
+      \item \textbf{Backend \& Data:} Node.js, NestJS, FastAPI, Spring Boot, PostgreSQL, MySQL, Redis, Kafka, Spark
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Additional Experience and Awards}
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item \textbf{Lead at Google Developers Student Club:} Led 4+ tech events (hackathons, conferences) reaching 500+ students.
+      \item \textbf{National Hackathon Winner:} Won or ranked Top 10 in 6+ national hackathons spanning ML, systems, and developer tools; built 3 complete MVPs end-to-end within 48-hour sprints, each with a working demo.
+      \item \textbf{IEEE Published:} Co-authored paper on CV-Based Cybersecurity Threat Detection (Springer icSoftComp 2023); presented to 500+ attendees.
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\end{document}

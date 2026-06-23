@@ -1,0 +1,61 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[margin=0.7in, top=0.6in, bottom=0.6in]{geometry}
+\usepackage{fontawesome5}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{parskip}
+
+\definecolor{ArizeViolet}{HTML}{7C3AED}
+\setmainfont{Times New Roman}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=ArizeViolet,
+  linkcolor=ArizeViolet
+}
+
+\begin{document}
+\thispagestyle{empty}
+
+{\large \textbf{Aditya Kulkarni}} \hfill
+{\color{ArizeViolet} \faPhone\ (281)-876-7066} \quad
+{\color{ArizeViolet} \faEnvelope\ adityakulkarnius@gmail.com} \\
+{\color{ArizeViolet} \faGithub\ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}} \quad
+{\color{ArizeViolet} \faGlobe\ \href{https://www.kulkarniaditya.com}{kulkarniaditya.com}}
+
+\vspace{6pt}
+{\color{ArizeViolet}\hrule height 1.2pt}
+\vspace{12pt}
+
+{\color{ArizeViolet} \textbf{Forward Deployed AI Engineer, East --- Arize AI}} \hfill June 20, 2026
+
+\vspace{10pt}
+
+Arize solves the hardest problem in production AI: knowing when your model is wrong before your customers do. I built the tools that expose exactly those failure modes --- and I want to bring that work into Arize's field engineering team.
+
+\vspace{6pt}
+
+\textbf{Why I am a strong fit:}
+
+\begin{itemize}
+  \item[\faAngleRight] \textbf{I built Arize's product space from scratch.} LLM Eval Harness: vendor-neutral Python benchmark comparing Claude, GPT-4o, and Gemini across 2,000 frozen examples --- hallucination rate, p50/p95 latency, cost-per-call, McNemar significance tests across 6 metrics. VectorLift: RAG evaluation pipeline on MS MARCO with bi-encoder + cross-encoder re-ranker, NDCG@10/MRR@10/MAP benchmarks, Kafka-driven Qdrant ingestion. These are not toy projects --- they map directly to what Arize customers need to instrument.
+
+  \item[\faAngleRight] \textbf{Production GenAI at enterprise scale.} Isomer AI: shipped multi-model LLM pipelines (Claude, GPT-4o, Gemini) across a per-tenant insurance platform with Temporal.io durable orchestration, risk signal detection (CRITICAL/HIGH/STANDARD), and 30+ production deployments. I have debugged LLM failures in prod, not just in notebooks.
+
+  \item[\faAngleRight] \textbf{MLOps observability infrastructure.} KubeServe: Kubernetes-native LLM inference platform with OpenTelemetry + Prometheus + Grafana end-to-end observability, KEDA autoscaling, and circuit breakers. 88 pytest tests, ArgoCD GitOps, load tested to 500 VUs. I understand the infra layer Arize customers are running on.
+
+  \item[\faAngleRight] \textbf{Client-facing delivery at production cadence.} At Isomer AI I worked directly with enterprise insurance carriers --- debugging issues, shipping integrations, and managing 30+ deployment cycles. The Forward Deployed model of embedded engineering + rapid delivery is how I have operated.
+\end{itemize}
+
+\vspace{8pt}
+
+The companies that win on AI will be the ones that know when their models fail. Arize is the platform that makes that possible --- I want to put it in front of more enterprise teams.
+
+\vspace{12pt}
+
+{\color{ArizeViolet} \textbf{Aditya Kulkarni}} \\
+\href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \quad $|$ \quad (281)-876-7066
+
+\end{document}

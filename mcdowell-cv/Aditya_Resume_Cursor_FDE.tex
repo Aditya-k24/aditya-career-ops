@@ -1,0 +1,117 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+
+\documentclass[]{mcdowellcv}
+
+\usepackage{amsmath}
+\usepackage{hyperref}
+\geometry{top=0.2in, bottom=0.2in}
+
+\name{Aditya Kulkarni}
+\address{\hspace{0.2\textwidth}\href{https://www.kulkarniaditya.com}{kulkarniaditya.com} \linebreak \href{https://www.linkedin.com/in/adityakulkarni244/}{linkedin.com/in/adityakulkarni244}}
+\contacts{(281)-876-7066 \linebreak adityakulkarnius@gmail.com \linebreak \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}}
+
+\begin{document}
+
+\makeheader
+
+\begin{cvsection}{Employment}
+  \begin{cvsubsection}{Graduate Research Assistant}{NC State University}{Apr 2025 -- Present}
+    \begin{itemize}
+      \item Collaborated with plant biologists and geneticists to deploy cloud-native genomic data platform on GCP (Cloud Run) with JBrowse 2 genome browser, enabling 100+ researchers to visualize 500GB+ genome datasets.
+      \item Improved ML model accuracy by 12\% via hyperparameter tuning and time-series analysis on biological sensor data.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Product Engineer Intern}{Isomer AI}{May 2025 -- May 2026}
+    \begin{itemize}
+      \item Collaborated with product and design teams to ship 10+ production AI features: multi-model LLM pipelines (Claude, GPT-4o, Gemini), Temporal.io agentic workflows; 923 commits, 7 production deployments.
+      \item Owned full-stack React/Node.js + TypeScript codebase: PostgreSQL, Redis, Docker, Auth0 RBAC, and Playwright test coverage.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Software Developer Intern}{Mphasis (HP Company)}{Jun 2024 -- Aug 2024}
+    \begin{itemize}
+      \item Partnered with healthcare data teams to build 5+ AI workflows including health claim automation using OCR, NLP, and ML pipelines; improved document processing accuracy by 25\% across 10K+ daily medical claims.
+      \item Automated AWS and GCP CI/CD pipelines; integrated Grafana monitoring and led model validation and red-teaming sessions.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{AI/ML Intern}{Capgemini}{Jun 2023 -- Aug 2023}
+    \begin{itemize}
+      \item Led cross-functional SDLC for data-driven enterprise ticket analysis using NLP classification models; worked with support teams to reduce resolution time by 15\% and eliminate 2,000+ monthly manual triages.
+      \item Built Kafka + Spark + Hadoop pipelines with data engineers; cut ticket-processing latency by 20\% at peak load.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Education}
+  \begin{cvsubsection}{Raleigh, NC}{North Carolina State University}{Aug 2024 -- May 2026}
+    \begin{itemize}
+      \item Master of Science in Computer Science
+      \item Courses: Artificial Intelligence, Operating Systems, Algorithms, Data Science, Object Oriented Development, Software Engineering, Programming Languages, Computer Networks, Distributed Systems.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Mumbai, India}{Mumbai University}{Aug 2020 -- May 2024}
+    \begin{itemize}
+      \item Bachelor of Technology in Computer Science; CGPA: 9.32/10. Courses: Data Warehousing, Big Data Infrastructure, DS \& Algorithms, Machine Learning, Blockchain, Computer Networks, Database Systems.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Projects}
+  \begin{cvsubsection}{LLM Eval Harness}{Independent Project}{2025}
+    \begin{itemize}
+      \item Built vendor-neutral LLM evaluation harness in Python comparing Claude, GPT-4o, and Gemini across 2,000 frozen labeled examples spanning factual recall, reasoning, and code generation tasks.
+      \item Tracked hallucination rate, p50/p95 latency, and cost-per-call; applied McNemar significance tests across 6 metrics.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{AlgoPulse}{Full-Stack Agentic AI Platform}{2025}
+    \begin{itemize}
+      \item Built agentic AI orchestration platform on Temporal.io and Kafka supporting multi-step reasoning pipelines; sustained 2,000 async inference requests per second under sustained production load.
+      \item Replaced polling with event-driven Supabase Edge Functions; sustained sub-200ms SSE delivery at 2,000 req/sec.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{CortexQ}{Kubernetes LLM Inference Platform}{2026}
+    \begin{itemize}
+      \item Built Kubernetes-native LLM inference platform: FastAPI router, KEDA autoscaler (scale-to-zero to N replicas), Kopf CRD operator for multi-provider LLM serving; circuit breaker + EWMA load balancing.
+      \item Deployed via Helm + ArgoCD GitOps on Kubernetes; OTel + Prometheus + Grafana observability; 88 pytest tests.
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Languages and Technologies}
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item \textbf{Languages:} Python, TypeScript, JavaScript, Java, SQL, Bash
+      \item \textbf{AI \& Evaluation:} LangChain, RAG, LLM Evals, Claude API, GPT-4o, Gemini, Temporal.io, DuckDB, Parquet
+      \item \textbf{Infra \& Observability:} Kubernetes, Docker, Kafka, FastAPI, GCP, AWS, OpenTelemetry, Prometheus, Grafana
+      \item \textbf{Full Stack \& Testing:} React, Node.js, PostgreSQL, Redis, Auth0, GitHub Actions, Playwright, Testcontainers, k6
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Additional Experience and Awards}
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item \textbf{IEEE Published:} Co-authored and presented research on Computer Vision-Based Cybersecurity Threat Detection at the Springer icSoftComp 2023 international conference, reaching an audience of 500+ global attendees.
+      \item \textbf{Hackathon Winner:} Won or ranked Top 10 in 6+ national hackathons; built 3 full-stack MVPs end-to-end in 48-hour competitive sprints.
+      \item \textbf{GDSC Lead:} Led 4+ tech events as Google Developer Student Club Lead, reaching 500+ students across hackathons and conferences.
+      \item \textbf{Technical Writing:} Published articles on LLM model collapse, AI agent security, and audio AI at \href{https://www.kulkarniaditya.com/blog}{kulkarniaditya.com/blog}.
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\end{document}

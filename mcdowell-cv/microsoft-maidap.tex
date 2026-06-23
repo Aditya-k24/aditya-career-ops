@@ -1,0 +1,191 @@
+%-------------------------------------------------------------
+% Aditya Kulkarni — Microsoft AI Development Acceleration Program (MAIDAP)
+% Software Engineer. Template: Jake's Resume. Compile: pdflatex
+% 9pt, tight single spacing, content-rich, one page within margins.
+%-------------------------------------------------------------
+\documentclass[9pt]{extarticle}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{charter}
+\linespread{0.95}    % minimal line spacing
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Even, comfortable margins (~0.55in)
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.55in}
+\addtolength{\textheight}{0.7in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Fixed, small section spacing — uniform line rhythm, no large gaps
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{1pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{1pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{1pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, topsep=1pt, itemsep=1pt, parsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in, topsep=0pt, itemsep=0pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+%-------------------------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Aditya Kulkarni} \\ \vspace{3pt}
+    \small (281) 876-7066 $|$
+    \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} $|$
+    \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244} $|$
+    \href{https://github.com/Aditya-k24}{github.com/Aditya-k24} $|$
+    \href{https://kulkarniaditya.com}{kulkarniaditya.com}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\small{\textbf{AI-systems engineer} (MS CS, NC State, May 2026) who builds \textbf{LLM infrastructure} other engineers consume: \textbf{MCP} tool servers, multi-model routing, and durable agent orchestration. Strong in \textbf{Python}, \textbf{TypeScript}, and \textbf{Java}, with production \textbf{ML} pipelines and Kubernetes-native cloud deployment experience.}
+\vspace{-2pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {NC State University}{Apr 2025 -- Present}
+      {Graduate Research Assistant}{Raleigh, NC}
+      \resumeItemListStart
+        \resumeItem{Designed a cloud-based genomic platform (\textbf{JBrowse 2} on \textbf{Google Cloud Run}) enabling \textbf{100+ researchers} worldwide to interactively explore \textbf{500GB} of strawberry and grape genome datasets}
+        \resumeItem{Collaborated on \textbf{ML} architecture design, applying hyperparameter tuning and time-series analysis to improve model accuracy by \textbf{12\%}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Isomer AI}{May 2025 -- May 2026}
+      {Product Engineer Intern}{Remote}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{MCP servers} in \textbf{Python} and \textbf{TypeScript} exposing typed tools and context to multi-model \textbf{LLM} agents (Claude, GPT-4o, Gemini), delivering \textbf{AI as a service} to product teams}
+        \resumeItem{Engineered a \textbf{Temporal.io} workflow engine for durable agent runs: versioned Draft/Live/Archived releases, canary traffic splits, QA sampling, and CRITICAL/HIGH/STANDARD risk detection}
+        \resumeItem{Shipped \textbf{10+ features} end-to-end (\textbf{PostgreSQL} to \textbf{React.js}) with \textbf{Playwright} browser automation over Tailscale VPN, \textbf{Auth0} RBAC, \textbf{Redis} caching, and \textbf{Sentry} observability across per-tenant stacks}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Mphasis (HP Company)}{Jun 2024 -- Aug 2024}
+      {Software Developer Intern}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{5+ AI workflows}, including a health-claim automation tool using \textbf{OCR}, \textbf{NLP}, and \textbf{ML} classification, that improved automated claim accuracy by \textbf{25\%}}
+        \resumeItem{Automated deployments on \textbf{AWS} and \textbf{GCP} with \textbf{Grafana} monitoring dashboards, and supported model validation and red-teaming to enhance production ML reliability}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Capgemini}{Jun 2023 -- Aug 2023}
+      {AI/ML Intern}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Led the SDLC for a support-ticket automation system, cutting manual processing time \textbf{15\%}; built \textbf{Hadoop}, \textbf{Spark}, and \textbf{Kafka} pipelines that reduced processing latency \textbf{20\%}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+        {\textbf{CortexQ} $|$ \emph{Kubernetes LLM Inference Platform}}{2026}
+        \resumeItemListStart
+          \resumeItem{Built a \textbf{Kubernetes}-native inference platform: \textbf{FastAPI} router with a 3-state circuit breaker and \textbf{EWMA} latency-aware load balancing across Claude, GPT-4o, and Gemini; \textbf{KEDA} autoscaler scales pods 0$\to$N on \textbf{Redis} queue depth (scale-to-zero when idle)}
+          \resumeItem{Authored a \textbf{Python} Kopf CRD operator reconciling Deployments, Services, and ScaledObjects; \textbf{OpenTelemetry} + Prometheus + Grafana observability; \textbf{Helm} + \textbf{ArgoCD} GitOps; 88 pytest tests; 500 VU k6 load tests}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{LLM Eval Harness} $|$ \emph{Vendor-Neutral Multi-Model Benchmark}}{2025}
+        \resumeItemListStart
+          \resumeItem{Benchmarked Claude Sonnet 4.6, GPT-4o, and Gemini 2.5 Pro across grounded QA, multi-hop QA, and claim verification on a \textbf{2,000-example} frozen set with 3 repeated runs per model}
+          \resumeItem{Tracked ExactMatch, TokenF1, grounded hallucination rate, p50/p95 latency, and cost/call; established significance via paired bootstrap CIs, McNemar test, and Holm correction}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{VectorLift} $|$ \emph{Semantic Search \& Ranking Engine (RAG)}}{2026}
+        \resumeItemListStart
+          \resumeItem{Built a semantic search system on \textbf{MS MARCO}: \textbf{BM25} baseline, fine-tuned dense bi-encoder, and cross-encoder re-ranker; \textbf{Kafka} indexing into \textbf{Elasticsearch} + \textbf{Qdrant}; served via \textbf{FastAPI}; tuned with \textbf{NDCG@10}/MRR@10}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{PulseRank} $|$ \emph{Real-Time Leaderboard \& Activity Feed}}{2026}
+        \resumeItemListStart
+          \resumeItem{Architected an event-driven leaderboard with \textbf{sub-millisecond} \textbf{Redis} reads, a \textbf{MySQL} outbox for durable writes, and live updates over Server-Sent Events; \textbf{TypeScript}, \textbf{NestJS}, \textbf{Next.js}}
+          \resumeItem{Verified multi-store consistency with \textbf{Testcontainers} integration tests, instrumented with \textbf{OpenTelemetry}, and load-tested throughput with \textbf{k6} benchmarks}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {NC State University}{Aug 2024 -- May 2026}
+      {M.S. Computer Science}{Raleigh, NC}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Artificial Intelligence, Machine Learning, Algorithms, Operating Systems, Software Engineering, Data Science}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Mumbai University}{Aug 2020 -- May 2024}
+      {B.Tech Computer Science, CGPA 9.32/10}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Data Structures \& Algorithms, Big Data Infrastructure, Data Warehousing, Blockchain, Software Engineering}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:} Python, TypeScript, JavaScript, Java, Ruby, SQL \\ \vspace{1pt}
+     \textbf{AI / ML:} LLM APIs (Claude, GPT-4o, Gemini), MCP, RAG, vector search (Qdrant), PyTorch, sentence-transformers \\ \vspace{1pt}
+     \textbf{Frameworks:} FastAPI, Node.js, Express.js, React.js, Next.js, NestJS, Spring Boot \\ \vspace{1pt}
+     \textbf{Infra \& Tools:} Kubernetes, Docker, KEDA, ArgoCD, Helm, Temporal.io, Kafka, AWS, GCP, Playwright, Grafana \\ \vspace{1pt}
+     \textbf{Achievements:} \textbf{HackNC24 Top 10}; \textbf{Sanjeevani Top 1\%} of 1100+ teams; \textbf{IEEE}-published; 110+ RSpec tests on \textbf{Expertiza} Rails OSS
+    }}
+ \end{itemize}
+
+%-------------------------------------------------------------
+\end{document}

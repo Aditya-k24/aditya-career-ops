@@ -1,0 +1,67 @@
+\documentclass[11pt,letterpaper]{article}
+
+% --- Packages ---
+\usepackage[top=0.55in, bottom=0.55in, left=0.85in, right=0.85in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+% --- Colors ---
+\definecolor{IntelBlue}{HTML}{0071C5}
+\definecolor{DarkGrey}{HTML}{333333}
+
+\setstretch{1.0}
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\Huge \textbf{\color{IntelBlue} Aditya Kulkarni}}\\[8pt]
+    {\color{DarkGrey} \small
+    \faPhone \ (281) 876-7066 \quad \textbar \quad
+    \faEnvelope \ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \\[4pt]
+    \faLinkedin \ \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244} \quad \textbar \quad
+    \faGithub \ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+    }
+\end{center}
+
+\vspace{-4pt}
+{\color{IntelBlue}\rule{\linewidth}{1.5pt}}
+\vspace{10pt}
+
+% --- Date & Salutation ---
+June 19, 2026\\[10pt]
+\textbf{To the Intel AI Engineering Team,}
+
+\vspace{6pt}
+
+% --- Opening ---
+Agentic AI frameworks are multiplying faster than the tooling to evaluate them. The gap between deploying an agent framework and knowing whether it is actually reliable, regressing, or cost-efficient is where most teams are flying blind. Building the evaluation infrastructure to close that gap --- deployment, observability, regression pipelines, and dashboards --- is exactly the work I have been doing independently, and it is exactly what this role builds at Intel's scale.
+
+\vspace{4pt}
+
+\begin{itemize}[leftmargin=*, itemsep=3pt, label={\color{IntelBlue}\faAngleRight}]
+    \item \textbf{LLM Evaluation Infrastructure, Built from Scratch:} I built a vendor-neutral LLM evaluation harness in Python --- 2,000 frozen labeled examples, hallucination rate, p50/p95 latency, cost-per-call, McNemar significance tests across Claude, GPT-4o, and Gemini. This directly maps to the role's mandate of ``automated evaluation pipelines for performance, reliability, and regression detection.''
+
+    \item \textbf{Scalable AI Deployment and Orchestration:} \textbf{CortexQ} is a Kubernetes-native LLM inference platform I built: FastAPI router, KEDA autoscaler, Kopf CRD operator for multi-provider serving, circuit breaker, EWMA load balancing, Helm + ArgoCD GitOps, and full OpenTelemetry + Prometheus + Grafana observability. I know what it takes to build deployment infrastructure that holds under real load.
+
+    \item \textbf{Agentic Framework Integration at Scale:} \textbf{AlgoPulse} is a production agentic AI orchestration platform on Temporal.io and Kafka --- 2,000 async inference requests per second, sub-200ms SSE delivery, multi-step reasoning pipelines. I have designed, debugged, and shipped the kind of agentic systems this role exists to evaluate.
+
+    \item \textbf{Multi-Model API Integration and Prompt Engineering:} At \textbf{Isomer AI}, I shipped production LLM pipelines integrating Claude (Anthropic), GPT-4o, and Gemini with tool-calling, RAG, and Temporal.io agentic workflows. The role specifically calls out Anthropic API integrations --- I have used them in production, not just in demos.
+\end{itemize}
+
+\vspace{6pt}
+
+% --- Closing ---
+Intel is building the infrastructure layer that the next generation of AI runs on. The evaluation ecosystem for agentic AI is a foundational part of that. I want to help build it. I would be glad to discuss.
+
+\vspace{12pt}
+
+\textbf{Sincerely,}\\[8pt]
+Aditya Kulkarni
+
+\end{document}

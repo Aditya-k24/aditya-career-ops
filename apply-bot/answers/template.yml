@@ -1,0 +1,33 @@
+# Apply-bot answers file
+# Copy this to NNN-company.yml and fill in your answers.
+# Keys are matched against form field labels (fuzzy, lowercase).
+# Short text fields: single line value
+# Long text / textarea: use | for multiline
+
+# --- Override defaults from profile.yml ---
+# salary_expectation: "$110,000 - $130,000"
+# referral_source: "LinkedIn"
+
+# --- Custom long-form answers ---
+# why_interested: |
+#   Your answer here...
+#
+# why_company: |
+#   Your answer here...
+#
+# tell_us_about_yourself: |
+#   Your answer here...
+#
+# biggest_achievement: |
+#   Your answer here...
+#
+# greatest_strength: |
+#   Your answer here...
+#
+# work_style: |
+#   Your answer here...
+
+# --- Example for Guidewire (report 178) ---
+# why_interested: |
+#   At Isomer AI I built backend features for a P&C claims automation platform
+#   that integrated directly with Guidewire via REST API calls and export parsing...

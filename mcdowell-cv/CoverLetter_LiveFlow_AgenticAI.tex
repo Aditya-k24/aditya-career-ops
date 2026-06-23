@@ -1,0 +1,68 @@
+\documentclass[11pt,letterpaper]{article}
+
+% --- Packages ---
+\usepackage[top=0.55in, bottom=0.55in, left=0.85in, right=0.85in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+% --- Colors ---
+\definecolor{LiveFlowGreen}{HTML}{166534}
+\definecolor{DarkGrey}{HTML}{333333}
+
+\setstretch{1.0}
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\Huge \textbf{\color{LiveFlowGreen} Aditya Kulkarni}}\\[8pt]
+    {\color{DarkGrey} \small
+    \faMapMarker* \ San Francisco, CA \quad \textbar \quad
+    \faPhone \ (281) 876-7066 \quad \textbar \quad
+    \faEnvelope \ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \\[4pt]
+    \faLinkedin \ \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244} \quad \textbar \quad
+    \faGithub \ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+    }
+\end{center}
+
+\vspace{-4pt}
+{\color{LiveFlowGreen}\rule{\linewidth}{1.5pt}}
+\vspace{10pt}
+
+% --- Date & Salutation ---
+June 14, 2026\\[10pt]
+\textbf{To the Engineering Team at LiveFlow,}
+
+\vspace{6pt}
+
+% --- Opening ---
+Finance teams at most companies are still stuck in spreadsheets, running month-end close processes that take days and require a team. LiveFlow's bet that agentic AI can compress that to hours---with accuracy and auditability the CFO can stake their name on---is the kind of product challenge I want to work on from day one, not as a junior ticket-taker but as someone shipping features that reach thousands of finance teams.
+
+\vspace{4pt}
+
+\begin{itemize}[leftmargin=*, itemsep=3pt, label={\color{LiveFlowGreen}\faAngleRight}]
+    \item \textbf{Agentic AI in Production, Not Just in Projects:} At \textbf{Isomer AI}, I shipped 10+ production AI features into enterprise insurance workflows---multi-model LLM pipelines (Claude, GPT-4o, Gemini), Temporal.io agentic workflows with MCP tooling, Auth0 RBAC---across 923 commits and 7 deployments. I owned incidents, managed CI/CD, and held SLA commitments to enterprise clients. I understand what it means to build agents that can't be wrong.
+
+    \item \textbf{TypeScript Full-Stack with Next.js:} \textbf{PulseRank} is a TypeScript + NestJS + Next.js event-driven platform: MySQL transactional writes with idempotency-key deduplication, MongoDB feed projections with TTL indexes, Redis sorted sets for sub-millisecond leaderboard reads---validated for multi-store consistency under 10K concurrent users with Testcontainers. My \textbf{AlgoPulse} project---also TypeScript + Temporal.io + Kafka---scaled an agentic orchestration platform to 2,000 async inference requests/second after I identified and eliminated the API-polling bottleneck.
+
+    \item \textbf{AWS and Infrastructure:} At \textbf{Mphasis}, I automated AWS and GCP CI/CD deployments and ran Grafana production monitoring. At Isomer I owned Terraform, Docker, and Sentry APM. The infrastructure side of this role isn't new to me.
+
+    \item \textbf{Product Mindset, Not Just Engineering:} I've built products used by real customers, tracked errors in production, resolved on-call incidents, and iterated on reviewer feedback (my first Expertiza PR was rejected for over-engineering---I learned and shipped the right version). I care about the user outcome, not just the technical elegance.
+\end{itemize}
+
+\vspace{6pt}
+
+% --- Closing ---
+LiveFlow's founding team is ex-Revolut---engineers who shipped at speed and learned to care deeply about financial correctness at scale. That's exactly the culture I want to grow in. I'm excited about the Loom video step in your process---happy to show how I think, not just what I've built. Looking forward to the conversation.
+
+\vspace{12pt}
+
+\textbf{Sincerely,}\\[8pt]
+Aditya Kulkarni
+
+\end{document}

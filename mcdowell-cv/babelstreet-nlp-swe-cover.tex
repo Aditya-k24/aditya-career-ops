@@ -1,0 +1,69 @@
+% Babel Street (via hatch IT) — NLP/Linguistics Software Engineer — Cover Letter
+% Aditya Kulkarni | Compile: xelatex
+\documentclass[11pt]{article}
+\usepackage[left=0.75in,top=0.75in,right=0.75in,bottom=0.75in]{geometry}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\pagestyle{empty}
+
+% Babel Street navy accent
+\definecolor{accent}{HTML}{16365C}
+\hypersetup{colorlinks=true, urlcolor=accent}
+
+\begin{document}
+
+%--- Header ---
+{\large\textbf{Aditya Kulkarni}} \hfill
+{\small
+  \textcolor{accent}{\faPhone}\ (281) 876-7066 \quad
+  \textcolor{accent}{\faEnvelope}\ adityakulkarnius@gmail.com \quad
+  \textcolor{accent}{\faLinkedin}\ \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244}
+}
+
+{\small
+  \textcolor{accent}{\faGithub}\ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24} \quad
+  \textcolor{accent}{\faGlobe}\ \href{https://kulkarniaditya.com}{kulkarniaditya.com}
+}
+
+\vspace{4pt}
+\textcolor{accent}{\rule{\linewidth}{0.5pt}}
+\vspace{8pt}
+
+\today
+
+\vspace{8pt}
+Hiring Team, Babel Street (Analytics Group)\\
+NLP/Linguistics Software Engineer\\
+Somerville, MA
+
+\vspace{10pt}
+Dear Hiring Team,
+
+\vspace{8pt}
+I'm applying for the NLP/Linguistics Software Engineer role in the Analytics Group. The framing in your posting is what drew me: when a match decision affects whether someone is onboarded or investigated, "the model said so" is not good enough. I have spent my projects building search and ranking systems where every result is measurable, tunable, and defensible, which is exactly what record matching demands.
+
+\vspace{8pt}
+\textbf{What I bring to the Analytics Group:}
+
+\begin{itemize}[leftmargin=*, label={\textcolor{accent}{\faAngleRight}}, itemsep=4pt]
+  \item \textbf{Search internals and re-ranking, end-to-end.} VectorLift is a semantic search and ranking engine I built on MS MARCO: a BM25 baseline in Elasticsearch, a fine-tuned dense bi-encoder, and a cross-encoder re-ranker, with Kafka-driven indexing into Elasticsearch and Qdrant served through FastAPI. This is the Elasticsearch data modeling, performance tuning, and retrieval architecture your record matching runs on.
+
+  \item \textbf{Provenance and explainability, by construction.} I evaluated six pipeline configurations with NDCG@10, MRR@10, and MAP, and used paired bootstrap significance tests so each ranking change was defensible rather than anecdotal. My LLM Eval Harness applies the same discipline to text analytics: tracking evidence-quote validity and grounded hallucination rate with McNemar tests and Holm correction. Auditable, tunable matches are the default in how I build.
+
+  \item \textbf{Production Java and Python.} At Isomer AI I shipped 10+ features end-to-end with typed document classification over multi-model LLM pipelines. Independently, my InventoryReservationService is a Java 21 and Spring Boot API with PostgreSQL row-level locking, proven correct under concurrency with Testcontainers integration tests, so I can move comfortably in your core analytics language and your AI/ML integrations alike.
+\end{itemize}
+
+\vspace{8pt}
+I'm completing my MS in Computer Science at NC State in May 2026, ready to start full-time in summer 2026, and happy to be in Somerville on a hybrid schedule. I'd welcome the chance to help make Babel Street's record matching world-class.
+
+\vspace{10pt}
+Sincerely,
+
+\vspace{4pt}
+\textbf{Aditya Kulkarni}
+
+\end{document}

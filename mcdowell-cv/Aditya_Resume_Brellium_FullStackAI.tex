@@ -1,0 +1,112 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+
+\documentclass[]{mcdowellcv}
+
+\usepackage{amsmath}
+\usepackage{hyperref}
+\geometry{top=0.3in}
+
+\name{Aditya Kulkarni}
+\address{\hspace{0.2\textwidth}\href{https://www.kulkarniaditya.com}{kulkarniaditya.com} \linebreak \href{https://www.linkedin.com/in/adityakulkarni244/}{linkedin.com/in/adityakulkarni244}}
+\contacts{(281)-876-7066 \linebreak adityakulkarnius@gmail.com \linebreak \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}}
+\location{New York City, NY}
+
+\begin{document}
+
+\makeheader
+
+\begin{cvsection}{Employment}
+  \begin{cvsubsection}{Graduate Research Assistant}{NC State University}{April 2025 -- Present}
+    \begin{itemize}
+      \item Deployed containerized genomic platform on GCP Cloud Run (Docker, Cloud Build CI) with JBrowse 2 genome browser; enabled 100+ researchers to visualize 500GB+ datasets by eliminating on-premise infrastructure.
+      \item Improved ML model accuracy by 12\% via grid-search hyperparameter sweeps and sliding-window feature engineering on multivariate biological sensor time-series.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Product Engineer Intern}{Isomer AI}{May 2025 -- Present}
+    \begin{itemize}
+      \item Shipped 10+ production AI features end-to-end: multi-model LLM pipelines (Claude, GPT-4o, Gemini), Temporal.io agentic workflows, and REST APIs; owned product from spec to deployment across 923 commits and 7 releases.
+      \item Owned PostgreSQL, Redis, Auth0 RBAC, Terraform, Docker, and Sentry stack; triaged and resolved production incidents by tracing failures across async microservices.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Software Developer Intern}{Mphasis (HP Company)}{Jun 2024 -- Aug 2024}
+    \begin{itemize}
+      \item Improved document processing accuracy by 25\% by building OCR + NLP classification pipelines that parsed unstructured health claim documents into structured fields for downstream automation.
+      \item Automated AWS and GCP releases via GitHub Actions CI/CD; configured Grafana dashboards for observability and led red-teaming to surface model reliability gaps pre-production.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{AI/ML Intern}{Capgemini}{Jun 2023 -- Aug 2023}
+    \begin{itemize}
+      \item Reduced ticket resolution time by 15\% by training an NLP multi-class classifier that auto-routed support tickets to the correct team based on predicted category and urgency.
+      \item Cut ticket-processing latency by 20\% by replacing synchronous DB polling with Kafka async ingestion feeding Spark micro-batch jobs across partitioned Hadoop HDFS.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Education}
+  \begin{cvsubsection}{Raleigh, NC}{North Carolina State University}{Aug 2024 -- May 2026}
+    \begin{itemize}
+      \item Master of Science in Computer Science
+      \item Courses: Artificial Intelligence, Operating Systems, Algorithms, Data Science, Object Oriented Development, Software Engineering.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Mumbai, India}{Mumbai University}{Aug 2020 -- May 2024}
+    \begin{itemize}
+      \item Bachelor of Technology in Computer Science; CGPA: 9.32/10. Courses: Data Warehousing, Big Data Infra, DS \& Algorithms, Machine Learning, Blockchain.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Projects}
+  \begin{cvsubsection}{CortexQ}{Kubernetes LLM Inference Platform}{2026}
+    \begin{itemize}
+      \item Built shared LLM inference platform on Kubernetes: KEDA autoscaler on queue-depth metrics, Kopf CRD operator routing requests across Claude, GPT-4o, and Gemini, circuit breaker + EWMA load balancing across replicas.
+      \item Instrumented OTel distributed tracing, Prometheus, and Grafana to optimize p95 latency under 500-VU k6 load; shipped via Helm + ArgoCD GitOps with 88 pytest tests enforced in GitHub Actions CI.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Glance AI}{Privacy-First RAG for Healthcare}{2025}
+    \begin{itemize}
+      \item Designed per-tenant RAG pipeline for healthcare with strict vector isolation preventing cross-tenant data leakage and LLM hallucinations.
+      \item Implemented deterministic retrieval for regulated environments; eliminated context bleed between tenants for factual LLM outputs.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+\end{cvsection}
+
+\begin{cvsection}{Languages and Technologies}
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item \textbf{Languages:} Python, TypeScript, JavaScript, Java, SQL, Bash, C
+      \item \textbf{AI \& LLMs:} Claude API, GPT-4o, Gemini, MCP, RAG, Temporal.io agentic workflows, prompt engineering
+      \item \textbf{Backend \& Data:} FastAPI, Node.js, Express, PostgreSQL, Redis, REST APIs, Kafka, Elasticsearch, event-driven architecture
+      \item \textbf{Infrastructure:} AWS, GCP, Docker, Kubernetes, Terraform, GitHub Actions, Grafana, Next.js, React
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Additional Experience and Awards}
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item \textbf{IEEE Published:} Co-authored paper on CV-Based Cybersecurity Threat Detection (Springer icSoftComp 2023); presented to 500+ attendees.
+      \item \textbf{National Hackathon Winner:} Won or ranked Top 10 in 6+ national hackathons spanning ML, systems, and developer tools; built 3 complete MVPs end-to-end within 48-hour sprints, each with a working demo.
+      \item \textbf{Lead at Google Developers Student Club:} Led 4+ tech events (hackathons, conferences) reaching 500+ students.
+      \item \textbf{Technical Writing:} Published on LLM model collapse, AI agent security, audio AI at \href{https://www.kulkarniaditya.com/blog}{kulkarniaditya.com/blog}
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\end{document}

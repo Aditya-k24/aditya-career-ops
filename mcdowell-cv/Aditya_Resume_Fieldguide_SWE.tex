@@ -1,0 +1,108 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+
+\documentclass[]{mcdowellcv}
+
+\usepackage{amsmath}
+\usepackage{hyperref}
+\geometry{top=0.2in, bottom=0.2in}
+
+\name{Aditya Kulkarni}
+\address{\hspace{0.2\textwidth}\href{https://www.kulkarniaditya.com}{kulkarniaditya.com} \linebreak \href{https://www.linkedin.com/in/adityakulkarni244/}{linkedin.com/in/adityakulkarni244}}
+\location{San Francisco, CA}
+\contacts{(281)-876-7066 \linebreak adityakulkarnius@gmail.com \linebreak \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}}
+
+\begin{document}
+
+\makeheader
+
+\begin{cvsection}{Employment}
+  \begin{cvsubsection}{Product Engineer Intern}{Isomer AI}{May 2025 -- May 2026}
+    \begin{itemize}
+      \item Ship 10+ production TypeScript features: document pipelines (PDF gen, Microsoft Graph API email parsing, S3), multi-model AI integrations (Claude, GPT-4o, Gemini), Auth0 RBAC; 923 commits, 7 deployments.
+      \item Own full-stack TypeScript/Node.js services: PostgreSQL and Redis data layer, Docker containerization, Auth0 RBAC, Sentry error tracking, and Temporal.io agentic workflow orchestration for reliability.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Graduate Research Assistant}{NC State University}{April 2025 -- Present}
+    \begin{itemize}
+      \item Deployed cloud-native genomic data platform on GCP (Cloud Run) with JBrowse 2 genome browser, enabling interactive visualization of 500GB+ strawberry and grape genome datasets for 100+ researchers.
+      \item Improved ML model accuracy by 12\% by applying hyperparameter tuning and time-series feature engineering on biological sensor data collected from strawberry and grape genomic field experiments.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Software Developer Intern}{Mphasis (HP Company)}{Jun 2024 -- Aug 2024}
+    \begin{itemize}
+      \item Built 5+ AI workflows including health claim automation using OCR, NLP, and ML classification pipelines on medical records; improved end-to-end document processing accuracy by 25\% across 10K+ daily claims.
+      \item Automated cloud deployments across AWS and GCP via CI/CD; integrated Grafana observability dashboards and led model validation and red-teaming sessions to improve reliability across production services.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{AI/ML Intern}{Capgemini}{Jun 2023 -- Aug 2023}
+    \begin{itemize}
+      \item Led end-to-end SDLC for a data-driven enterprise ticket analysis system using NLP classification models; reduced average resolution time by 15\% and eliminated manual triage for 2,000+ monthly tickets.
+      \item Implemented distributed data pipelines using Kafka streaming and Spark + Hadoop batch processing for large-scale ticket ingestion; reduced end-to-end ticket-processing latency by 20\% at peak load.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Education}
+  \begin{cvsubsection}{Raleigh, NC}{North Carolina State University}{Aug 2024 -- May 2026}
+    \begin{itemize}
+      \item Master of Science in Computer Science
+      \item Courses: Artificial Intelligence, Operating Systems, Algorithms, Data Science, Object Oriented Development, Software Engineering, Programming Languages, Computer Networks, Distributed Systems.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Mumbai, India}{Mumbai University}{Aug 2020 -- May 2024}
+    \begin{itemize}
+      \item Bachelor of Technology in Computer Science; CGPA: 9.32/10. Courses: Data Warehousing, Big Data Infrastructure, DS \& Algorithms, Machine Learning, Blockchain, Computer Networks, Database Systems.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Projects}
+  \begin{cvsubsection}{VectorLift}{Semantic Search \& Ranking Engine}{2026}
+    \begin{itemize}
+      \item Built BM25 + bi-encoder (sentence-transformers) + cross-encoder re-ranker pipeline on MS MARCO with 6 configurations evaluated across NDCG@10, MRR@10, MAP, and bootstrap significance testing.
+      \item Indexed 8.8M-passage MS MARCO corpus via Kafka into Elasticsearch and Qdrant vector stores; built FastAPI search API and Streamlit experiment dashboard comparing dense vs. sparse retrieval performance.
+    \end{itemize}
+    \vspace{-1.5pt}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{PulseRank}{Real-Time Leaderboard \& Activity Feed}{2026}
+    \begin{itemize}
+      \item Built event-driven leaderboard and activity feed in TypeScript with NestJS and Next.js: MySQL transactional writes, MongoDB feed projections with TTL, Redis sorted sets for sub-millisecond reads; live SSE.
+      \item Validated multi-DB consistency with Testcontainers integration tests; benchmarked hot paths with k6 at 10K concurrent users; wired OpenTelemetry + Prometheus observability and GitHub Actions CI/CD pipeline.
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Languages and Technologies}
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item \textbf{Languages:} TypeScript, JavaScript, Python, Java, SQL, Bash
+      \item \textbf{Frontend \& Full Stack:} React, Next.js, Node.js, NestJS, REST APIs, Auth0, PostgreSQL, Redis, MongoDB, SSE
+      \item \textbf{Search \& AI:} Elasticsearch, Qdrant, sentence-transformers, Claude/GPT-4o/Gemini APIs, LangChain, RAG, Temporal.io
+      \item \textbf{DevOps \& Cloud:} Docker, Kubernetes, AWS, GCP, GitHub Actions, Kafka, Prometheus, Grafana, Sentry
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Additional Experience and Awards}
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item \textbf{IEEE Published:} Co-authored and presented research on Computer Vision-Based Cybersecurity Threat Detection at the Springer icSoftComp 2023 international conference, reaching an audience of 500+ global attendees.
+      \item \textbf{National Hackathon Winner:} Won or ranked Top 10 in 6+ national hackathons spanning ML, systems, and developer tools; built 3 complete full-stack MVPs end-to-end in 48-hour competitive sprints, each delivering a working live demo.
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+\end{document}

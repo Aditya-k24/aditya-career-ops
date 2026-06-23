@@ -1,0 +1,68 @@
+\documentclass[11pt,letterpaper]{article}
+
+% --- Packages ---
+\usepackage[top=0.55in, bottom=0.55in, left=0.85in, right=0.85in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+% --- Colors ---
+\definecolor{AmazonOrange}{HTML}{FF9900}
+\definecolor{DarkGrey}{HTML}{333333}
+
+\setstretch{1.0}
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\Huge \textbf{\color{AmazonOrange} Aditya Kulkarni}}\\[8pt]
+    {\color{DarkGrey} \small
+    \faMapMarker* \ Seattle, WA \quad \textbar \quad
+    \faPhone \ (281) 876-7066 \quad \textbar \quad
+    \faEnvelope \ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \\[4pt]
+    \faLinkedin \ \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244} \quad \textbar \quad
+    \faGithub \ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+    }
+\end{center}
+
+\vspace{-4pt}
+{\color{AmazonOrange}\rule{\linewidth}{1.5pt}}
+\vspace{10pt}
+
+% --- Date & Salutation ---
+June 10, 2026\\[10pt]
+\textbf{To the AWS Data Services Engineering Team,}
+
+\vspace{6pt}
+
+% --- Opening ---
+AWS Data Services operates some of the most widely used database, storage, and analytics infrastructure in the world. The engineering challenges here---distributed query processing, petabyte-scale storage engines, fault-tolerant data platforms serving millions of customers---are the class of problems I want to work on as a new graduate. I bring hands-on production experience in distributed systems, data pipelines, cloud infrastructure on AWS and GCP, and a track record of building software that runs reliably at scale.
+
+\vspace{4pt}
+
+\begin{itemize}[leftmargin=*, itemsep=3pt, label={\color{AmazonOrange}\faAngleRight}]
+    \item \textbf{Distributed Systems and Production Ownership:} At \textbf{Isomer AI}, I shipped 10+ production AI features---multi-model LLM pipelines, Temporal.io agentic workflows, Auth0 RBAC---managing CI/CD, on-call incident resolution, and SLA commitments across enterprise environments. I built \textbf{CortexQ}, a Kubernetes-native distributed inference platform with KEDA autoscaling, circuit breaker logic, EWMA load balancing, and OpenTelemetry observability, load tested to 500 concurrent users with 88 integration tests validating correctness.
+
+    \item \textbf{Data Pipelines and Analytics Systems:} At \textbf{Capgemini}, I built distributed Kafka + Spark + Hadoop pipelines for real-time ingestion and batch processing that cut ticket-processing latency by 20\%. My \textbf{PulseRank} project architected a multi-DB system---MySQL transactional writes, MongoDB feed projections with TTL indexes, Redis sorted sets for sub-millisecond leaderboard reads---validated for consistency under 10K concurrent users with Testcontainers.
+
+    \item \textbf{AWS and Cloud-Native Infrastructure:} At \textbf{Mphasis}, I automated AWS and GCP CI/CD deployments and integrated Grafana dashboards for real-time production monitoring. My tech stack spans PostgreSQL, Redis, DuckDB, Docker, Kubernetes, and Helm---the same infrastructure AWS Data Services is built on.
+
+    \item \textbf{GenAI and ML Systems:} I built a vendor-neutral \textbf{LLM Evaluation Harness} tracking hallucination rates, p50/p95 latency, and cost-per-call across Claude, GPT-4o, and Gemini on 2,000 labeled examples---applying McNemar significance tests and Bootstrap confidence intervals. At NC State, I deployed a genomic data platform enabling 100+ researchers to analyze 500GB+ datasets, improving ML model accuracy by 12\%.
+\end{itemize}
+
+\vspace{6pt}
+
+% --- Closing ---
+AWS Data Services is foundational infrastructure for the rest of the cloud. That is precisely the kind of high-ownership, high-impact engineering I want to build my career on. I would welcome the opportunity to discuss how my background fits your team's needs.
+
+\vspace{12pt}
+
+\textbf{Sincerely,}\\[8pt]
+Aditya Kulkarni
+
+\end{document}

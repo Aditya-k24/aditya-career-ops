@@ -1,0 +1,50 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[top=0.55in, bottom=0.55in, left=0.85in, right=0.85in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{setspace}
+\definecolor{VercelBlack}{HTML}{000000}
+\definecolor{DarkGrey}{HTML}{333333}
+\setstretch{1.0}
+\begin{document}
+\begin{center}
+    {\Huge \textbf{\color{VercelBlack} Aditya Kulkarni}}\\[8pt]
+    {\color{DarkGrey} \small
+    \faPhone \ (281) 876-7066 \quad \textbar \quad
+    \faEnvelope \ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \\[4pt]
+    \faLinkedin \ \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244} \quad \textbar \quad
+    \faGithub \ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+    }
+\end{center}
+\vspace{-4pt}
+{\color{VercelBlack}\rule{\linewidth}{1.5pt}}
+\vspace{10pt}
+
+June 21, 2026\\[10pt]
+\textbf{To the Vercel Agent Stack Team,}
+
+\vspace{6pt}
+
+Durable execution is what separates agent prototypes from production agents. I have built durable, resumable workflow systems on Temporal.io --- the same primitive Vercel Workflows is bringing to TypeScript developers at platform scale --- and I understand both the engineering and the developer experience challenges they solve. I want to help build Vercel Workflows into the backbone of the next generation of AI applications.
+
+\vspace{4pt}
+\begin{itemize}[leftmargin=*, itemsep=3pt, label={\color{VercelBlack}\faAngleRight}]
+    \item \textbf{Durable Execution and Workflow Orchestration in Production:} At \textbf{Isomer AI}, I built per-tenant agentic workflows on Temporal.io --- durable orchestration with workflow versioning (Draft$\to$Live$\to$Archived), checkpoint-based execution, LLM risk signal pipelines, and MCP tool integrations across 30+ deployments. In \textbf{AlgoPulse}, I extended this to Kafka-backed multi-step reasoning at 2,000 async inference requests per second. Temporal.io is not a new tool for me --- it is how I build agentic systems.
+
+    \item \textbf{TypeScript Ownership Across the Full Stack:} TypeScript is my primary language. At Isomer I owned the full codebase: React + Node.js, Auth0 RBAC, PostgreSQL, Redis, Playwright test coverage. In \textbf{PulseRank}, I built a production NestJS + Next.js system with MySQL, MongoDB, Redis, Testcontainers, and k6 benchmarking --- Vercel's own ecosystem. I write TypeScript APIs that other developers want to use.
+
+    \item \textbf{AI/ML Framework Integration:} Through \textbf{KubeServe} and Isomer, I integrated Claude, GPT-4o, and Gemini behind model-agnostic routing layers with circuit breakers and EWMA load balancing. I also built MCP servers (Python + TypeScript) that extend agents with external tool access --- directly relevant to Vercel Workflows' integration with Eve and the broader Agent Stack.
+
+    \item \textbf{Distributed Systems: Queues, State Machines, Failure Recovery:} Across AlgoPulse and KubeServe, I implemented retry logic, timeout handling, circuit breakers, and graceful degradation for async workflow systems. Understanding how durable systems fail --- and how to recover --- is where I built my confidence in this space.
+\end{itemize}
+\vspace{6pt}
+
+Vercel Workflows will do for async agents what Next.js did for web apps. I want to help build that. I would be glad to discuss.
+
+\vspace{12pt}
+\textbf{Sincerely,}\\[8pt]
+Aditya Kulkarni
+\end{document}

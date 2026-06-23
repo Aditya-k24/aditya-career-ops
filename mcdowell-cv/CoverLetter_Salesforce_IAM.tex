@@ -1,0 +1,67 @@
+\documentclass[11pt,letterpaper]{article}
+
+% --- Packages ---
+\usepackage[top=0.55in, bottom=0.55in, left=0.85in, right=0.85in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+% --- Colors ---
+\definecolor{SalesforceBlue}{HTML}{1589EE}
+\definecolor{DarkGrey}{HTML}{333333}
+
+\setstretch{1.0}
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\Huge \textbf{\color{SalesforceBlue} Aditya Kulkarni}}\\[8pt]
+    {\color{DarkGrey} \small
+    \faPhone \ (281) 876-7066 \quad \textbar \quad
+    \faEnvelope \ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \\[4pt]
+    \faLinkedin \ \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244} \quad \textbar \quad
+    \faGithub \ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+    }
+\end{center}
+
+\vspace{-4pt}
+{\color{SalesforceBlue}\rule{\linewidth}{1.5pt}}
+\vspace{10pt}
+
+% --- Date & Salutation ---
+June 11, 2026\\[10pt]
+\textbf{To the Salesforce Enterprise Security IAM Team,}
+
+\vspace{6pt}
+
+% --- Opening ---
+Identity and Access Management is the trust layer that every Salesforce product depends on. The work of building foundational IAM services---device trust, access enforcement, PKI, and the systems that protect customer data at enterprise scale---is precisely the kind of engineering I want to grow into. I bring production experience in distributed systems, cloud-native infrastructure, Auth0 RBAC, and an AI-first engineering approach that aligns directly with Salesforce's Agentforce-driven development philosophy.
+
+\vspace{4pt}
+
+\begin{itemize}[leftmargin=*, itemsep=3pt, label={\color{SalesforceBlue}\faAngleRight}]
+    \item \textbf{AI-First Engineering:} At \textbf{Isomer AI}, I built and shipped 10+ production AI features using multi-model LLM pipelines (Claude, GPT-4o, Gemini), Temporal.io agentic workflows, and Auth0 RBAC access control---923 commits, 7 production deployments. I use Claude Code and AI tools as a core part of my daily engineering workflow, which maps directly to Salesforce's requirement for a ``demonstrated, genuine AI-first approach.''
+
+    \item \textbf{Distributed Systems and Kubernetes Infrastructure:} I built \textbf{CortexQ}, a Kubernetes-native LLM inference platform with KEDA autoscaling (scale-to-zero to N replicas), a Kopf CRD operator, circuit breaker logic, EWMA load balancing, and full OpenTelemetry + Prometheus + Grafana observability---deployed via Helm + ArgoCD GitOps and load tested to 500 concurrent users with 88 pytest integration tests.
+
+    \item \textbf{Identity and Access Control:} My production work at Isomer AI included implementing Auth0 RBAC---role-based access control governing user permissions across enterprise client environments. While I am early in my IAM journey, I bring strong engineering fundamentals and genuine curiosity about Zero Trust, TLS, OAuth, and certificate-based trust mechanisms.
+
+    \item \textbf{Operational Excellence and Security Awareness:} At \textbf{Mphasis}, I automated AWS and GCP CI/CD pipelines and led model red-teaming sessions to identify failure modes. At \textbf{NC State}, I published IEEE research on Computer Vision-based Cybersecurity Threat Detection---evidence of my academic grounding in security domains.
+\end{itemize}
+
+\vspace{6pt}
+
+% --- Closing ---
+I am excited by the intersection of distributed systems, AI agents, and enterprise security that defines the IAM platform team at Salesforce. I would welcome the chance to discuss how my background fits the MTS role.
+
+\vspace{12pt}
+
+\textbf{Sincerely,}\\[8pt]
+Aditya Kulkarni
+
+\end{document}

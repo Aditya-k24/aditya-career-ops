@@ -1,0 +1,69 @@
+% Microsoft AI Development Acceleration Program (MAIDAP) — Cover Letter
+% Aditya Kulkarni | Compile: xelatex
+\documentclass[11pt]{article}
+\usepackage[left=0.75in,top=0.75in,right=0.75in,bottom=0.75in]{geometry}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\pagestyle{empty}
+
+% Microsoft blue accent
+\definecolor{accent}{HTML}{0078D4}
+\hypersetup{colorlinks=true, urlcolor=accent}
+
+\begin{document}
+
+%--- Header ---
+{\large\textbf{Aditya Kulkarni}} \hfill
+{\small
+  \textcolor{accent}{\faPhone}\ (281) 876-7066 \quad
+  \textcolor{accent}{\faEnvelope}\ adityakulkarnius@gmail.com \quad
+  \textcolor{accent}{\faLinkedin}\ \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244}
+}
+
+{\small
+  \textcolor{accent}{\faGithub}\ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24} \quad
+  \textcolor{accent}{\faGlobe}\ \href{https://kulkarniaditya.com}{kulkarniaditya.com}
+}
+
+\vspace{4pt}
+\textcolor{accent}{\rule{\linewidth}{0.5pt}}
+\vspace{8pt}
+
+\today
+
+\vspace{8pt}
+Hiring Team, Microsoft\\
+Software Engineer, AI Development Acceleration Program (MAIDAP)\\
+Redmond, WA
+
+\vspace{10pt}
+Dear Hiring Team,
+
+\vspace{8pt}
+I'm applying for the Software Engineer role in the AI Development Acceleration Program. MAIDAP's mission, providing AI as a service to engineering teams across Microsoft, is exactly the work I've spent the last year doing: building LLM infrastructure that other engineers plug into and ship on.
+
+\vspace{8pt}
+\textbf{What I bring to MAIDAP:}
+
+\begin{itemize}[leftmargin=*, label={\textcolor{accent}{\faAngleRight}}, itemsep=4pt]
+  \item \textbf{AI as a service, in production.} At Isomer AI, I built MCP servers in Python and TypeScript that expose typed tools and context to multi-model LLM agents (Claude, GPT-4o, Gemini), and engineered the Temporal.io workflow engine that runs them durably: versioned releases, canary splits, QA sampling, and automated risk detection. Product teams consumed this as a platform, not a one-off.
+
+  \item \textbf{Inference infrastructure, end-to-end.} CortexQ is a Kubernetes-native LLM inference platform I built independently: a FastAPI router with a circuit breaker and EWMA latency-aware load balancing across model backends, a KEDA autoscaler that scales pods to zero when idle, and a Python Kopf operator that reconciles the whole deployment. This is the local-plus-cloud, multi-team serving pattern MAIDAP works on.
+
+  \item \textbf{Rigorous, vendor-neutral evaluation.} My LLM Eval Harness benchmarks Claude Sonnet 4.6, GPT-4o, and Gemini 2.5 Pro on a frozen 2,000-example set, tracking ExactMatch, TokenF1, hallucination rate, latency, and cost with bootstrap confidence intervals and McNemar tests, the kind of measurement discipline a shared AI platform depends on.
+\end{itemize}
+
+\vspace{8pt}
+I'm completing my MS in Computer Science at NC State in May 2026 and am ready to start full-time in July 2026 and relocate to Redmond. I'd welcome the chance to bring this work to MAIDAP's teams.
+
+\vspace{10pt}
+Sincerely,
+
+\vspace{4pt}
+\textbf{Aditya Kulkarni}
+
+\end{document}

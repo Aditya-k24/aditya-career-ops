@@ -1,0 +1,67 @@
+\documentclass[11pt,letterpaper]{article}
+
+% --- Packages ---
+\usepackage[top=0.55in, bottom=0.55in, left=0.85in, right=0.85in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+% --- Colors ---
+\definecolor{VercelBlack}{HTML}{000000}
+\definecolor{DarkGrey}{HTML}{333333}
+
+\setstretch{1.0}
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\Huge \textbf{\color{VercelBlack} Aditya Kulkarni}}\\[8pt]
+    {\color{DarkGrey} \small
+    \faPhone \ (281) 876-7066 \quad \textbar \quad
+    \faEnvelope \ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \\[4pt]
+    \faLinkedin \ \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244} \quad \textbar \quad
+    \faGithub \ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+    }
+\end{center}
+
+\vspace{-4pt}
+{\color{VercelBlack}\rule{\linewidth}{1.5pt}}
+\vspace{10pt}
+
+% --- Date & Salutation ---
+June 21, 2026\\[10pt]
+\textbf{To the Vercel Agent Stack Team,}
+
+\vspace{6pt}
+
+% --- Opening ---
+Eve is the right abstraction. Agents need what Next.js gave web apps: opinionated structure, a production runtime, and a DX that lets developers write only what is unique about their agent. I have built the core pieces Eve is assembling --- durable orchestration with Temporal.io, MCP server integrations, and multi-LLM routing --- and I want to help build the framework that makes them first-class primitives for every TypeScript developer.
+
+\vspace{4pt}
+
+\begin{itemize}[leftmargin=*, itemsep=3pt, label={\color{VercelBlack}\faAngleRight}]
+    \item \textbf{Durable Execution and Async Workflow Orchestration:} At \textbf{Isomer AI}, I built production agentic pipelines on Temporal.io --- durable orchestration with workflow versioning (Draft$\to$Live$\to$Archived), checkpoint-based execution, retry logic, and failure recovery at 30+ customer deployments. In \textbf{AlgoPulse}, I built the same patterns at 2,000 async inference requests per second on Kafka + Temporal. This maps directly to Eve's Workflows runtime layer.
+
+    \item \textbf{MCP Servers and Connections Layer:} At Isomer, I designed and shipped MCP servers in Python and TypeScript that expose customer-internal tools to LLM agents --- file I/O, browser automation via Playwright, and Tailscale VPN tunneling for secure internal access. Eve's connections layer (Vercel Connect / MCP endpoints) is exactly this architecture at framework scale.
+
+    \item \textbf{TypeScript Ownership Across the Full Stack:} TypeScript is my primary language. At Isomer, I owned the entire product codebase: React + Node.js, Auth0 RBAC, PostgreSQL, Redis, Playwright test coverage. In \textbf{PulseRank}, I built a production event-driven system in NestJS and Next.js --- Vercel's own ecosystem. I write the kind of TypeScript APIs that developers actually want to use.
+
+    \item \textbf{Multi-LLM Routing and Agent Evaluation:} Through \textbf{KubeServe} and Isomer, I built model-agnostic LLM routing across Claude, GPT-4o, and Gemini with circuit breakers and EWMA load balancing. I also built a vendor-neutral LLM eval harness --- 2,000 frozen test examples, hallucination rate, p50/p95 latency, McNemar significance tests --- which maps to Eve's evaluation and observability story.
+\end{itemize}
+
+\vspace{6pt}
+
+% --- Closing ---
+Vercel shaped how the web is built. Eve has the same potential for agents. I want to be part of building that foundation. I would be glad to discuss.
+
+\vspace{12pt}
+
+\textbf{Sincerely,}\\[8pt]
+Aditya Kulkarni
+
+\end{document}

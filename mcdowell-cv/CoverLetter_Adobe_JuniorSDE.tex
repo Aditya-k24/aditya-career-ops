@@ -1,0 +1,71 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=0.75in, top=0.6in, bottom=0.6in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{fontspec}
+
+\setmainfont{Times New Roman}
+
+\definecolor{AdobeRed}{HTML}{FA0F00}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=AdobeRed,
+  linkcolor=AdobeRed
+}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Aditya Kulkarni}} \\[4pt]
+  \small
+  \faPhone\ (281)-876-7066 \quad
+  \faEnvelope\ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \quad
+  \faGlobe\ \href{https://www.kulkarniaditya.com}{kulkarniaditya.com} \quad
+  \faLinkedin\ \href{https://www.linkedin.com/in/adityakulkarni244/}{linkedin.com/in/adityakulkarni244} \quad
+  \faGithub\ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+\end{center}
+
+\vspace{6pt}
+
+June 16, 2026
+
+\vspace{6pt}
+
+Hiring Team \\
+Adobe \\
+San Jose, CA
+
+\vspace{10pt}
+
+Dear Adobe Team,
+
+\vspace{6pt}
+
+Adobe's GenAI services team is building the shared infrastructure — Evaluation Service, Voice Service, Moderation Service — that every product team at Adobe will rely on. That kind of platform-level, high-leverage work is exactly what I want to be doing. I'm applying for the Junior Software Development Engineer role on that team.
+
+\vspace{8pt}
+
+Here's why I'm a direct fit:
+
+\begin{itemize}[leftmargin=1.2em, itemsep=4pt]
+  \item[\textcolor{AdobeRed}{\faAngleRight}] \textbf{GenAI services in production — exactly what this team builds.} CortexQ is a Python FastAPI microservice that routes and evaluates LLM inference across Claude, GPT-4o, and Gemini with EWMA latency-aware load balancing, Redis queuing, and Kubernetes autoscaling. It directly parallels Adobe's Evaluation Service: multi-model routing, performance measurement, and operational reliability at scale. This isn't exposure — I've built and shipped this in production.
+  \item[\textcolor{AdobeRed}{\faAngleRight}] \textbf{Production LLM features shipped at enterprise scale.} At Isomer AI, I deployed 10+ production AI features — multi-model LLM pipelines, Temporal.io agentic workflows with MCP tooling, Auth0 RBAC — across 923 commits and 7 deployments to enterprise clients. I understand how to take GenAI capabilities from prototype to production in a shared services context.
+  \item[\textcolor{AdobeRed}{\faAngleRight}] \textbf{Observability, DevOps, and platform reliability.} CortexQ ships with OpenTelemetry + Prometheus + Grafana and GitOps delivery via Helm + ArgoCD. At Isomer, I managed CI/CD pipelines, integrated Sentry APM, and resolved production incidents on-call. The CL platform operational work in this role is a natural extension of how I already work.
+  \item[\textcolor{AdobeRed}{\faAngleRight}] \textbf{Full-stack and cross-functional experience.} AlgoPulse shows TypeScript + Temporal.io event-driven architecture with a React Native mobile client scaled to 2,000 concurrent requests. PulseRank demonstrates complex data modeling, multi-store consistency testing with Testcontainers, and Server-Sent Events for real-time UI — the kind of full-stack depth Adobe's shared GenAI services require.
+\end{itemize}
+
+\vspace{8pt}
+
+I'd welcome the chance to talk about how my background maps to the GenAI services roadmap.
+
+\vspace{10pt}
+
+Sincerely, \\[4pt]
+\textbf{Aditya Kulkarni}
+
+\end{document}

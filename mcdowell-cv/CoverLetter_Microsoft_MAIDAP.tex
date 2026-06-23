@@ -1,0 +1,67 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+\definecolor{brand}{HTML}{0078D4}
+\hypersetup{colorlinks=true, urlcolor=brand}
+
+\newcommand{\CLheader}{%
+  \begin{center}
+    {\Large \textbf{Aditya Kulkarni}}\\[4pt]
+    \textcolor{brand}{\faPhone}\ (281)-876-7066 \quad
+    \textcolor{brand}{\faEnvelope}\ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \quad
+    \textcolor{brand}{\faLinkedin}\ \href{https://linkedin.com/in/adityakulkarni244}{adityakulkarni244} \quad
+    \textcolor{brand}{\faGlobe}\ \href{https://kulkarniaditya.com}{kulkarniaditya.com}
+  \end{center}
+  \vspace{4pt}
+  \textcolor{brand}{\rule{\linewidth}{1.2pt}}
+  \vspace{6pt}
+}
+
+\begin{document}
+\CLheader
+
+\today
+
+\vspace{8pt}
+
+Microsoft AI Development Acceleration Program\\
+Microsoft Corporation\\
+Redmond, WA
+
+\vspace{8pt}
+
+Dear MAIDAP Hiring Team,
+
+\vspace{6pt}
+
+I am applying for the Software Engineer position in the Microsoft AI Development Acceleration Program. Bridging research and production AI, deploying LLM systems at scale, and working across interdisciplinary teams are the exact problems I have been building toward, and MAIDAP is the environment I want to do that work in.
+
+\vspace{6pt}
+
+My background maps directly to what this program requires:
+
+\vspace{4pt}
+\begin{itemize}
+  \item[\textcolor{brand}{\faAngleRight}] I built a vendor-neutral LLM evaluation harness in Python comparing Claude, GPT-4o, and Gemini across 2,000 frozen labeled examples, tracking hallucination rate, p50/p95 latency, cost-per-call, and applying McNemar significance tests across 6 metrics. This is the kind of rigorous, data-driven evaluation infrastructure that separates AI systems that ship from ones that stay in research.
+  \item[\textcolor{brand}{\faAngleRight}] At Isomer AI, I shipped a production multi-model AI platform serving 30+ enterprise deployments: Temporal.io durable orchestration, LLM risk signal detection across Claude/GPT-4o/Gemini, and MCP server integrations. This is production AI, not prototypes.
+  \item[\textcolor{brand}{\faAngleRight}] KubeServe is a Kubernetes-native LLM inference platform I built end-to-end: KEDA autoscaler, circuit breaker with EWMA load balancing, Helm + ArgoCD GitOps deployment, and a full OTel + Prometheus + Grafana observability stack for high-scale distributed serving.
+\end{itemize}
+
+\vspace{6pt}
+
+I am completing my MSCS at NC State in May 2026 and am available to start in July 2026 as required. The two-year MAIDAP structure, working across product teams and applied scientists, then joining a sponsoring team, is exactly the kind of compounding career investment I am looking for. I am energized by the challenge of turning frontier AI research into systems that work reliably for millions of people.
+
+\vspace{12pt}
+
+Sincerely,
+
+\vspace{6pt}
+\textbf{Aditya Kulkarni}
+
+\end{document}

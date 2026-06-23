@@ -1,0 +1,50 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[top=0.55in, bottom=0.55in, left=0.85in, right=0.85in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{setspace}
+\definecolor{VercelBlack}{HTML}{000000}
+\definecolor{DarkGrey}{HTML}{333333}
+\setstretch{1.0}
+\begin{document}
+\begin{center}
+    {\Huge \textbf{\color{VercelBlack} Aditya Kulkarni}}\\[8pt]
+    {\color{DarkGrey} \small
+    \faPhone \ (281) 876-7066 \quad \textbar \quad
+    \faEnvelope \ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \\[4pt]
+    \faLinkedin \ \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244} \quad \textbar \quad
+    \faGithub \ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+    }
+\end{center}
+\vspace{-4pt}
+{\color{VercelBlack}\rule{\linewidth}{1.5pt}}
+\vspace{10pt}
+
+June 21, 2026\\[10pt]
+\textbf{To the Vercel Agent Stack Team,}
+
+\vspace{6pt}
+
+An AI Gateway is a harder problem than it looks. It is not just routing --- it is caching semantically equivalent prompts, enforcing rate limits under bursty agent traffic, failing over across providers without surfacing errors to developers, and doing all of it with the latency budget of a real-time application. I have built the routing and failover layer for a multi-LLM system and understand where these problems bite in production. I want to help build Vercel AI Gateway into the infrastructure that every TypeScript developer uses to talk to LLMs.
+
+\vspace{4pt}
+\begin{itemize}[leftmargin=*, itemsep=3pt, label={\color{VercelBlack}\faAngleRight}]
+    \item \textbf{Multi-Provider LLM Routing with Circuit Breakers:} \textbf{KubeServe} is a production LLM inference platform I built: FastAPI router with KEDA autoscaling (scale-to-zero to N replicas), multi-provider routing across Claude/GPT-4o/Gemini, circuit breaker + EWMA load balancing, and OTel + Prometheus + Grafana observability. Rate limiting, caching hot paths with Redis, and graceful provider failover are the core architectural problems I solved there.
+
+    \item \textbf{High-Throughput API Infrastructure in TypeScript:} At \textbf{Isomer AI}, I owned the full TypeScript codebase delivering 30+ customer deployments: Node.js + Express APIs, Redis caching, Auth0 RBAC, PostgreSQL, Playwright test coverage. In \textbf{AlgoPulse}, I built systems handling 2,000 async inference requests per second with sub-100ms leaderboard latency under k6 load tests at 10,000 concurrent users.
+
+    \item \textbf{AI/ML Integration and Observability:} Through KubeServe and Isomer, I integrated Claude, GPT-4o, and Gemini behind model-agnostic APIs with full OTel tracing and Prometheus metrics on every LLM call. The role calls out ``AI/ML integrations, API gateways, distributed systems'' --- these are the three intersections where I have built production experience.
+
+    \item \textbf{Vercel Ecosystem Fluency:} \textbf{PulseRank} is a production event-driven system built in NestJS and Next.js --- Vercel's own flagship framework. I understand the developer experience Vercel optimizes for, and I want to build infrastructure that feels native to that ecosystem.
+\end{itemize}
+\vspace{6pt}
+
+The AI Gateway is the connective tissue between every developer and every LLM on Vercel's platform. I want to help build it right. I would be glad to discuss.
+
+\vspace{12pt}
+\textbf{Sincerely,}\\[8pt]
+Aditya Kulkarni
+\end{document}

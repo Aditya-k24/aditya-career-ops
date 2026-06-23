@@ -1,0 +1,67 @@
+\documentclass[11pt,letterpaper]{article}
+
+% --- Packages ---
+\usepackage[top=0.55in, bottom=0.55in, left=0.85in, right=0.85in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+% --- Colors ---
+\definecolor{IntelBlue}{HTML}{0071C5}
+\definecolor{DarkGrey}{HTML}{333333}
+
+\setstretch{1.0}
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\Huge \textbf{\color{IntelBlue} Aditya Kulkarni}}\\[8pt]
+    {\color{DarkGrey} \small
+    \faPhone \ (281) 876-7066 \quad \textbar \quad
+    \faEnvelope \ \href{mailto:adityakulkarnius@gmail.com}{adityakulkarnius@gmail.com} \\[4pt]
+    \faLinkedin \ \href{https://linkedin.com/in/adityakulkarni244}{linkedin.com/in/adityakulkarni244} \quad \textbar \quad
+    \faGithub \ \href{https://github.com/Aditya-k24}{github.com/Aditya-k24}
+    }
+\end{center}
+
+\vspace{-4pt}
+{\color{IntelBlue}\rule{\linewidth}{1.5pt}}
+\vspace{10pt}
+
+% --- Date & Salutation ---
+June 21, 2026\\[10pt]
+\textbf{To the Intel AI Engineering Team,}
+
+\vspace{6pt}
+
+% --- Opening ---
+The job description puts it exactly right: the model is only half an agent; the harness is the other half. I have spent the last year building the harness half --- the agent loop, tool integrations, MCP servers, and multi-model abstraction layers that make agentic systems actually work in production. That work maps directly to every deliverable in this role.
+
+\vspace{4pt}
+
+\begin{itemize}[leftmargin=*, itemsep=3pt, label={\color{IntelBlue}\faAngleRight}]
+    \item \textbf{MCP Servers and Tool Integrations, Shipped in Production:} At \textbf{Isomer AI}, I built MCP servers in Python and TypeScript that expose customer-internal tools to LLM agents --- file I/O, browser automation via Playwright, Tailscale VPN tunneling for secure internal access. This is the exact ``tool integrations'' mandate: file, terminal, web, and message app connectors behind a clean abstraction.
+
+    \item \textbf{Model-Agnostic Multi-LLM Routing:} At Isomer and through \textbf{KubeServe}, I built model-agnostic routing layers that swap local and cloud providers behind one API --- Claude, GPT-4o, and Gemini, with circuit breaker and EWMA load balancing. The role's requirement to keep the harness ``model-agnostic so local and cloud models are swappable behind one abstraction'' is architecture I have already implemented.
+
+    \item \textbf{Agent Loop with Temporal.io Orchestration:} \textbf{AlgoPulse} is a production agentic AI platform built on Temporal.io and Kafka --- multi-step reasoning pipelines, tool invocation, retry logic, and termination conditions at 2,000 async inference requests per second. I have designed and debugged the agent loop that this role builds at Intel's scale.
+
+    \item \textbf{Observability and Reproducible Sessions:} Through \textbf{LLM Eval Harness} and \textbf{KubeServe}, I instrumented agent pipelines with OpenTelemetry, Prometheus, and Grafana --- tracing individual tool calls, replaying evaluation runs against frozen test sets, and publishing reproducible performance comparisons across 6 metrics. Making agents observable and debuggable is not an afterthought in my work; it is the foundation.
+\end{itemize}
+
+\vspace{6pt}
+
+% --- Closing ---
+Intel's hybrid local--cloud agent architecture is the right technical direction: private, efficient, and cost-predictable by design. I want to help build the harness that makes it real. I would be glad to discuss.
+
+\vspace{12pt}
+
+\textbf{Sincerely,}\\[8pt]
+Aditya Kulkarni
+
+\end{document}
