@@ -1,0 +1,84 @@
+# Personal data (user fills these)
+data/applications.md
+data/pipeline.md
+data/scan-history.tsv
+reports/*.md
+!reports/.gitkeep
+output/*.log
+output/*.aux
+batch/logs/*
+!batch/logs/.gitkeep
+batch/batch-state.tsv
+batch/batch-input.tsv
+batch/tracker-additions/*.tsv
+!batch/tracker-additions/.gitkeep
+jds/*
+!jds/.gitkeep
+
+# User config and customization (never auto-updated)
+config/profile.yml
+portals.yml
+modes/_profile.md
+.update-dismissed
+.update-lock
+
+# Secrets
+.env
+
+# McDowell CV build artifacts and PDFs
+mcdowell-cv/*.pdf
+mcdowell-cv/*.aux
+mcdowell-cv/*.log
+mcdowell-cv/*.out
+mcdowell-cv/*.synctex.gz
+mcdowell-cv/*.fls
+mcdowell-cv/*.fdb_latexmk
+
+# Generated
+.resolved-prompt-*
+node_modules/
+
+# OS
+.DS_Store
+*.mov
+*.mp4
+
+# Claude Code local
+.claude/settings.local.json
+.claude/memory/
+career-dashboard
+package-lock.json
+
+# apply-bot outputs
+apply-bot/screenshots/
+apply-bot/logs/
+apply-bot/answers/*.yml
+!apply-bot/answers/template.yml
+
+# Outreach tool
+outreach/sent-log.json
+outreach/linkedin-*.md
+
+# Personal content (kept local, never published)
+cv.md
+article-digest.md
+modes/_custom.md
+output/
+mcdowell-cv/
+batch/tracker-additions/merged/
+interview-prep/*
+!interview-prep/.gitkeep
+memory/
+outreach/
+apply-bot/
+data/*
+!data/.gitkeep
+reports/*
+!reports/.gitkeep
+writing-samples/*
+!writing-samples/README.md
+voice-dna.md
+.career-ops-render-*.html
+cl-*.json
+hidden-jobs-leads*.csv
+__pycache__/
