@@ -67,7 +67,10 @@ output/
 mcdowell-cv/
 batch/tracker-additions/merged/
 interview-prep/*
-!interview-prep/.gitkeep
+!interview-prep/sessions/
+interview-prep/sessions/*
+!interview-prep/sessions/.gitkeep
+!interview-prep/sessions/README.md
 memory/
 outreach/
 apply-bot/
