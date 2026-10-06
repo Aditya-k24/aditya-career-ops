@@ -64,7 +64,7 @@
     "@google/generative-ai": "^0.24.1",
     "dotenv": "^17.0.0",
     "js-yaml": "^4.1.1",
-    "nodemailer": "^9.0.3",
+    "nodemailer": "^10.0.13",
     "playwright": "1.61.1"
   }
 }
